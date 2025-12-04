@@ -1,0 +1,24 @@
+# Data PostgreSQL
+pgdata/
+
+# Docker temp files
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# sample data
+data/
+
+# env
+.env
