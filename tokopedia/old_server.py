@@ -7,7 +7,6 @@ import json
 from product import TokopediaScraper
 from dotenv import load_dotenv
 import os
-from multiprocessing import Process
 
 load_dotenv()
 
@@ -343,40 +342,6 @@ def scrape_page(url, l1_tuple, l2_tuple, l3_tuple):
 # ------------------------------------------------------------
 # MAIN PROGRAM (OTOMATIS)
 # ------------------------------------------------------------
-def run_category_l1(l1_selected):
-  l1_selected_id, l1_selected_name, l1_selected_url = l1_selected
-
-  l2_categories = get_categories(level=2, parent_id=l1_selected_id)
-  if not l2_categories:
-    print(f"[SKIP] L1 '{l1_selected_name}': Tidak ada L2.")
-    return
-
-  for l2_selected in l2_categories:
-    l2_selected_id, l2_selected_name, l2_selected_url = l2_selected
-
-    l3_categories = get_categories(level=3, parent_id=l2_selected_id)
-    if not l3_categories:
-      print(f"[SKIP] L2 '{l2_selected_name}': Tidak ada L3.")
-      continue
-
-    for l3_selected in l3_categories:
-      l3_selected_id, l3_selected_name, l3_selected_url = l3_selected
-
-      print("\n" + "=" * 60)
-      print(f"➡️ MEMULAI: {l1_selected_name} > {l2_selected_name} > {l3_selected_name}")
-      print(f"   URL Dasar: {l3_selected_url}")
-      print(f"   Target Halaman: 1 sampai {MAX_PAGES_PER_CATEGORY}")
-      print("=" * 60)
-
-      for page in range(1, MAX_PAGES_PER_CATEGORY + 1):
-        if "?" in l3_selected_url:
-          page_url = f"{l3_selected_url}&page={page}"
-        else:
-          page_url = f"{l3_selected_url}?page={page}"
-
-        print(f"[{l1_selected_name}] [HALAMAN {page}] Scraping URL: {page_url}")
-        scrape_page(page_url, l1_selected, l2_selected, l3_selected)
-
 if __name__ == "__main__":
   try:
     print("-" * 20 + " [ SCRAPER OTOMATIS DIMULAI ] " + "-" * 20)
@@ -389,18 +354,51 @@ if __name__ == "__main__":
         print("Tidak ada kategori Level 1 ditemukan. Hentikan program.")
         exit()
 
-    processes = []
-
     for l1_selected in l1_categories:
-      p = Process(target=run_category_l1, args=(l1_selected,))
-      p.start()
-      processes.append(p)
-      print(f"🚀 L1 '{l1_selected[1]}' berjalan di proses PID {p.pid}")
+        l1_selected_id, l1_selected_name, l1_selected_url = l1_selected
+        
+        # 2. Ambil SEMUA kategori Level 2 berdasarkan L1
+        l2_categories = get_categories(level=2, parent_id=l1_selected_id)
 
-    for p in processes:
-      p.join()
+        if not l2_categories:
+            print(f"   [SKIP] L1 '{l1_selected_name}': Tidak ada L2.")
+            continue
+
+        for l2_selected in l2_categories:
+            l2_selected_id, l2_selected_name, l2_selected_url = l2_selected
+
+            # 3. Ambil SEMUA kategori Level 3 berdasarkan L2
+            l3_categories = get_categories(level=3, parent_id=l2_selected_id)
+
+            if not l3_categories:
+                print(f"      [SKIP] L2 '{l2_selected_name}': Tidak ada L3.")
+                continue
+
+            for l3_selected in l3_categories:
+                l3_selected_id, l3_selected_name, l3_selected_url = l3_selected
+
+                print("\n" + "=" * 60)
+                print(f"➡️ MEMULAI: {l1_selected_name} > {l2_selected_name} > {l3_selected_name}")
+                print(f"   URL Dasar: {l3_selected_url}")
+                print(f"   Target Halaman: 1 sampai {MAX_PAGES_PER_CATEGORY}")
+                print("=" * 60)
+                
+                # 4. Loop Halaman 1 sampai MAX_PAGES_PER_CATEGORY (100)
+                for page in range(1, MAX_PAGES_PER_CATEGORY + 1):
+                    if "?" in l3_selected_url:
+                        page_url = f"{l3_selected_url}&page={page}"
+                    else:
+                        page_url = f"{l3_selected_url}?page={page}"
+
+                    print(f"   [HALAMAN {page}/{MAX_PAGES_PER_CATEGORY}] Scraping URL: {page_url}")
+                    
+                    scrape_page(page_url, l1_selected, l2_selected, l3_selected)
+                    
+                    # Jeda antar halaman
+                    time.sleep(random.uniform(SCRAPE_DELAY_SECONDS, SCRAPE_DELAY_SECONDS + 1))
+
 
   finally:
     if conn:
-      conn.close()
+        conn.close()
     print("\n" + "-" * 20 + " [ SCRAPER SELESAI ] " + "-" * 20)
