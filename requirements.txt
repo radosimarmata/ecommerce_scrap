@@ -7,3 +7,4 @@ selenium
 webdriver-manager 
 selenium-stealth
 python-dotenv
+openai
