@@ -52,6 +52,8 @@ def ai_understand(query: str, categories_level_2: list) -> dict:
         "    \"color\": \"merah\",\n"
         "    \"location\": \"jakarta\",\n"
         "    \"condition\": \"bekas\"\n"
+        "    \"storage\": \"128GB\"\n"
+        "    \"ram\": \"4GB\"\n"
         "    \"harga_min\": 100000,\n"
         "    \"harga_max\": 5000000\n"
         "  }\n"
@@ -124,23 +126,51 @@ def final_product_search(cur, query_vector, l3_category_id, top_k=50, filters=No
       p.name AS product_name,
       p.price AS product_price,
       p.url AS product_url,
+      p.stock,
+      p.sold,
+      p.reviews,
       pc.chunk_text,
       (pc.embedding <=> %s::vector) AS distance
     FROM products p 
     JOIN product_chunks pc ON p.id = pc.product_id
   """
-  where_clause = f" WHERE 1=1 AND p.category_id = '{l3_category_id}' and p.stock > 0"
+  where_clause = f" WHERE 1=1 AND p.category_id = '{l3_category_id}' "
   filter_params = []
 
-  print(filters)
-
+  # print(filters)
   if filters.get("location"):
     where_clause += " AND p.shop_location ILIKE %s "
     filter_params.append(f"%{filters['location']}%")
 
   if filters.get("color"):
-    where_clause += " AND p.variant_spec ->> 'warna' ILIKE %s "
+    where_clause += """
+      AND EXISTS (
+          SELECT 1
+          FROM jsonb_each_text(p.variant_spec) AS kv
+          WHERE kv.value ILIKE %s
+      )
+      """
     filter_params.append(f"%{filters['color']}%")
+  
+  if filters.get("storage"):
+    where_clause += """
+      AND EXISTS (
+          SELECT 1
+          FROM jsonb_each_text(p.variant_spec) AS kv
+          WHERE kv.value ILIKE %s
+      )
+      """
+    filter_params.append(f"%{filters['storage']}%")
+
+  if filters.get("ram"):
+    where_clause += """
+      AND EXISTS (
+          SELECT 1
+          FROM jsonb_each_text(p.variant_spec) AS kv
+          WHERE kv.value ILIKE %s
+      )
+      """
+    filter_params.append(f"%{filters['ram']}%")
 
   if filters.get("condition"):
     where_clause += " AND p.detail ->> 'kondisi' ILIKE %s "
@@ -277,9 +307,9 @@ def main():
 
     for i, r in enumerate(results, start=1):
       print(f"{i}. {r['product_name']} (Rp {r['product_price']})")
-      print(f"   url: {r['product_id']}")
+      print(f"   stock: {r['stock']}")
       print(f"   url: {r['product_url']}")
-      print(f"   Cocok Karena: {r['chunk_text']}")
+      print(f"   reviews: {r['reviews']}")
       print(f"   Score: {r['distance']}\n")
 
     print("==============================\n")
