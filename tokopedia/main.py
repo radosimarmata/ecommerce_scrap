@@ -69,31 +69,75 @@ def generate_embedding(text):
     return None
 
 # ------------------------------------------------------------
-# GET CHUNK TYPE
+# CLEAN PRODUCT TITLE
 # ------------------------------------------------------------
-def get_or_create_chunk_type_id(cur, chunk_type_name):
-  cur.execute(
-    "SELECT id FROM chunk_types WHERE name = %s",
-    (chunk_type_name,)
-  )
-  row = cur.fetchone()
-  if row:
-    return row[0]
+PROMPT_TEMPLATE = """
+  You are a deterministic product title normalizer for semantic embedding.
 
-  cur.execute(
-    """
-    INSERT INTO chunk_types (name, description)
-    VALUES (%s, %s)
-    RETURNING id
-    """,
-    (chunk_type_name, f"Tipe chunk: {chunk_type_name}")
-  )
-  return cur.fetchone()[0]
+  TASK:
+  Extract a clean and compact product title suitable for semantic embedding.
 
+  RULES:
+  - Keep the product type. (e.g., Battery, Battery Charger)
+  - KEEP brand names. (Canon, Brica, Citycall, Energizer)
+  - KEEP essential series/model identifiers. (LP-E8, AE1, AE2, M26, E91)
+  - REMOVE promo, bundle, count, B2G1, variant, color, etc.
+
+  ### STRICT RULES:
+  - Output ONLY the core product name.
+  - Do NOT add or invent words.
+  - Do NOT remove or rewrite core words.
+  - Do NOT include inch, cm, watt, GB, model numbers, year, variant, or color.
+  - Do NOT rephrase or translate.
+  - Do NOT output brand unless it is part of the product naming convention (e.g., “Honda Vario”).
+
+  ### EXAMPLES:
+  "Round Air Grill 4 inch Circular Air Diffuser" → "Air Grill"
+  "Rumah/cover Depan kipas angin maspion" → "cover kipas angin"
+  "iPhone 14 Pro Max 128GB Purple" → "iPhone 14"
+  "ASUS ROG Strix Z490 Gaming Motherboard" → "ASUS ROG Strix Motherboard"
+
+  ### CATEGORY LOCK:
+  L1: {l1}
+  L2: {l2}
+  L3: {l3}
+  You MUST NOT output anything not in the original title.
+
+  OUTPUT FORMAT:
+  "<Product Type> <Brand> <Series>"
+
+  Product Title:
+  "{title}"
+"""
+def clean_title_with_openai(title: str, l1: str, l2: str, l3: str) -> str:
+  """Clean product title using OpenAI model."""
+  try:
+    prompt = PROMPT_TEMPLATE.format(
+      title=title,
+      l1=l1,
+      l2=l2,
+      l3=l3
+    )
+
+    response = client.chat.completions.create(
+      model="gpt-4.1-mini",
+      messages=[
+        {"role": "system", "content": "You are a deterministic extractor."},
+        {"role": "user", "content": prompt}
+      ],
+      temperature=0
+    )
+
+    cleaned = response.choices[0].message.content.strip()
+    return cleaned if cleaned else title
+  except Exception as e:
+    print("❌ OpenAI Error:", e)
+    return title
+  
 # ------------------------------------------------------------
 # SAVE PRODUCT AND CHUNKS
 # ------------------------------------------------------------
-def save_product_and_chunks(products_data, category_id, full_category_path):
+def save_product_and_chunks(products_data, l1, l2, l3):
   conn = ensure_connection()
   with conn.cursor() as cur:
     product_id_first = None  
@@ -138,15 +182,13 @@ def save_product_and_chunks(products_data, category_id, full_category_path):
       INSERT INTO product_chunks (
         product_id, 
         chunk_text, 
-        chunk_type_id, 
-        embedding, 
-        chunk_meta
+        embedding 
       ) VALUES (
-        %s, %s, %s, %s::VECTOR, %s
+        %s, %s, %s::VECTOR
       );
     """
     delete_old_chunks_query = "DELETE FROM product_chunks WHERE product_id = %s;"
-
+    
     for i, product_data in enumerate(products_data, start=0): 
       current_parent_id = None
       is_parent = False
@@ -157,36 +199,11 @@ def save_product_and_chunks(products_data, category_id, full_category_path):
       else:
         current_parent_id = product_id_first
 
-      shop_name = product_data.get('shop_name', '')
-      shop_location = product_data.get('shop_location', '')
       name = product_data.get('product_name', '')
-      detail = product_data.get('product_detail', {})
-      reviews = product_data.get('product_reviews', {})
-      variant_spec = product_data.get('variant_spec', {})
-      description = detail.get('deskripsi', '')
-      price_val = product_data.get('product_price')
-      stock_val = product_data.get('product_stock')
-      sold_val = product_data.get('product_sold')
-      price_num = 0 
-      stock_num = 0
-      sold_num = 0
-      try:
-        price_num = int(price_val) if price_val else 0
-      except (ValueError, TypeError):
-        price_num = 0
-          
-      try:
-        stock_num = int(stock_val) if stock_val else 0
-      except (ValueError, TypeError):
-        stock_num = 0
-      try:
-        sold_num = int(sold_val) if sold_val else 0
-      except (ValueError, TypeError):
-        sold_num = 0
 
       cur.execute(insert_query_base, (
         'tokopedia',
-        category_id,
+        l3[0],
         product_data.get('shop_name'),
         product_data.get('shop_location'),
         product_data.get('product_name'),
@@ -206,70 +223,30 @@ def save_product_and_chunks(products_data, category_id, full_category_path):
         product_id_first = product_id
         
       print(f"Save product: {name}")
+      print("="*50)
+      
+      if current_parent_id is None:
+        cur.execute(delete_old_chunks_query, (product_id,))
+      
+        chunk_text = clean_title_with_openai(name, l1, l2, l3)
+        print(f"results: {chunk_text}")
+        print("-"*50)
 
-      cur.execute(delete_old_chunks_query, (product_id,))
+        embedding = generate_embedding(chunk_text)
 
-      total_reviews = reviews.get('total_rating', 0)
-      main_rating = reviews.get('average_score', 'N/A')
-      topics = reviews.get('topics', {})
+        if embedding:
+          embedding_str = f"[{','.join(map(str, embedding))}]"
 
-      # ====== CHUNKING GRANULAR ======
-      chunks = []
-      # nama produk
-      chunks.append(("nama", f"Nama produk adalah {name}", {}))
-      # toko
-      if shop_name:
-        chunks.append(("toko", f"Produk ini dijual oleh {shop_name}", {}))
-      # lokasi toko
-      if shop_location:
-        chunks.append(("lokasi", f"Lokasi toko adalah {shop_location}", {}))
-      # variant spec (setiap key jadi chunk)
-      if isinstance(variant_spec, dict):
-        for key, value in variant_spec.items():
-          if value:
-            chunks.append((f"variant::{key}", f"{key}: {value}", {"key": key, "value": value}))
-      # detail (setiap key jadi chunk, kecuali deskripsi)
-      if isinstance(detail, dict):
-        for key, value in detail.items():
-          if key.lower() != "deskripsi" and value:
-            if isinstance(value, (str, int, float, bool)):
-              chunks.append((f"detail::{key}", f"{key}: {value}", {"key": key, "value": value}))
-            else:
-              chunks.append((f"detail::{key}", f"{key}: {str(value)}", {"key": key, "value": value}))
-      # rating
-      if main_rating:
-        chunks.append(("rating", f"Rating produk adalah {main_rating}", {"rating": main_rating}))
-      # total reviews
-      chunks.append(("total_reviews", f"Total ulasan produk adalah {total_reviews}", {"total_reviews": total_reviews}))
-      # topics (setiap key → chunk)
-      if isinstance(topics, dict):
-        for topic, topic_data in topics.items():
-          score = topic_data.get("score", None)
-          if score is not None:
-            txt = f"Topik {topic} memiliki skor {score}"
-            chunks.append((f"topic::{topic}", txt, {"topic": topic, "score": score}))
-
-      for chunk_type_name, chunk_text, meta_dict in chunks:
-        if chunk_text and chunk_text.strip():
-          chunk_type_id = get_or_create_chunk_type_id(cur, chunk_type_name)
-
-          embedding = generate_embedding(chunk_text)
-          chunk_meta_json = json.dumps(meta_dict)
-
-          if embedding:
-            embedding_str = f"[{','.join(map(str, embedding))}]"
-
-            cur.execute(
-              insert_chunk_query,
-              (
-                product_id,
-                chunk_text,
-                chunk_type_id,
-                embedding_str,
-                chunk_meta_json
-              )
+          cur.execute(
+            insert_chunk_query,
+            (
+              product_id,
+              chunk_text,
+              embedding_str
             )
+          )
 
+  
 # ------------------------------------------------------------
 # GET CATEGORY BY LEVEL
 # ------------------------------------------------------------
@@ -370,9 +347,8 @@ def scrape_page(url, l1_selected, l2_selected, l3_selected):
             try:
               scraper = TokopediaScraper()
               results = scraper.scrape(product_url)
-              category_id = l3_selected[0]
-              full_category_path = f"{l1_selected[1]} > {l2_selected[1]} > {l3_selected[1]}"
-              save_product_and_chunks(results, category_id, full_category_path)
+              
+              save_product_and_chunks(results, l1_selected, l2_selected, l3_selected)
             except Exception as product_e:
               logging.error(f"[{L3_NAME}] GAGAL SCRAPE PRODUK (URL: {product_url}): {product_e}. Lanjut ke produk berikutnya.")
             

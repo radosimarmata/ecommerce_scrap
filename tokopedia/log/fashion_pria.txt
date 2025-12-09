@@ -1,0 +1,182 @@
+2025-12-09 13:11:08,980 - INFO - Scraping untuk setiap kategori Fashion Pria setiap child kategori 100 halaman.
+
+2025-12-09 13:11:22,364 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-moxie-jet-black-42-581ad?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:11:24,668 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:25,103 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:25,319 - INFO - Mengambil data dari: https://www.tokopedia.com/hoopsdept/sepatu-sneakers-pria-nike-dunk-low-retro-redwood-dv0833115-original-1731653907588744694?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO%26whid%3D18712450
+2025-12-09 13:11:28,174 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:28,542 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:28,664 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-moxie-royal-blood-37-02364?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:11:30,597 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:31,007 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:31,190 - INFO - Mengambil data dari: https://www.tokopedia.com/wdmofficial/weidenmann-rocket-02-sepatu-casual-lifestyle-shoes-karet-running-sneakers-pria-1730253183039931674?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:11:33,714 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:44,582 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:44,960 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/remark-smallville-36-66bf0?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:11:46,845 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:47,304 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:47,451 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-makassar-off-season-sale-size-36-leather-2cbaa?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:11:49,654 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:50,013 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:50,455 - INFO - Mengambil data dari: https://www.tokopedia.com/wdmofficial/weidenmann-matrix-01-sepatu-sneakers-upper-flyknit-unisex-casual-olahraga-shoes-running-pria-black-1730166703176647962?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:11:53,797 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:54,573 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:54,869 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-reverence-serene-white-36-eu?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:11:57,188 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:57,759 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:57,983 - INFO - Mengambil data dari: https://www.tokopedia.com/wdmofficial/weidenmann-matrix-02-sepatu-sneakers-upper-flyknit-unisex-casual-olahraga-shoes-running-1730166781530834202?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:01,927 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:02,301 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:02,789 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-loafer-grey-1731318284201134013?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:05,424 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:05,964 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:06,289 - INFO - Mengambil data dari: https://www.tokopedia.com/wdmofficial/weidenmann-weidenmann-urban-viper-02-ivory-sepatu-sneakers-casual-lifestyle-unisex-shoes-running-pria-1729917463560291610?extParam=ivf%3Dtrue%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:10,907 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:11,351 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:11,444 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-remark-orca-43-051dc?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:13,030 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:13,537 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:13,714 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/moxie-cotton-white-43-50fce?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:15,795 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:16,335 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:16,462 - INFO - Mengambil data dari: https://www.tokopedia.com/wdmofficial/weidenmann-rocket-01-sepatu-casual-lifestyle-shoes-karet-sneakers-running-pria-black-1730248489898378522?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:18,584 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:18,998 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:19,385 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-moxie-honey-gold-40-7a6a7?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:21,131 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:21,529 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:22,110 - INFO - Mengambil data dari: https://www.tokopedia.com/hoopsdept/sepatu-sneakers-unisex-adidas-g-s-court-gw4499-original-1732995393509623286?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO%26whid%3D18712450
+2025-12-09 13:12:23,910 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:24,333 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:24,510 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-loafer-navy-1731171414920955837?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:28,688 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:29,154 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:29,331 - INFO - Mengambil data dari: https://www.tokopedia.com/hoopsdept/sepatu-sneakers-pria-nike-p-6000-se-hf0015201-original-1731332875182769654?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO%26whid%3D16055520
+2025-12-09 13:12:31,492 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:32,004 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:32,116 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakypairofficial/sneakypair-integra-heritage-blue-1729432839513541470?extParam=ivf%3Dtrue%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:34,290 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:34,719 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:34,797 - INFO - Mengambil data dari: https://www.tokopedia.com/hoopsdept/sepatu-sneakers-pria-adidas-advantage-base-2-0-jh6870-original-1731343459457992182?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO%26whid%3D16055520
+2025-12-09 13:12:36,661 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:37,159 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:37,334 - INFO - Mengambil data dari: https://www.tokopedia.com/wdmofficial/sepatu-sneakers-flyknit-upper-pria-weidenmann-wolvo-03-grey-39?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:39,384 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:40,518 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:40,958 - INFO - Mengambil data dari: https://www.tokopedia.com/wdmofficial/weidenmann-weidenmann-urban-viper-02-mocca-sepatu-sneakers-casual-lifestyle-unisex-shoes-running-pria-1729917471359730970?extParam=ivf%3Dtrue%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:42,713 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:43,090 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:43,256 - INFO - Mengambil data dari: https://www.tokopedia.com/hoopsdept/sepatu-sneakers-pria-adidas-urban-court-if4076-original-1731422117227365878?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO%26whid%3D16055520
+2025-12-09 13:12:46,054 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:46,436 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:46,654 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-moxie-arashiyama-42-e5654?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:48,256 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:48,742 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:48,911 - INFO - Mengambil data dari: https://www.tokopedia.com/hoopsdept/sepatu-sneakers-pria-nike-dunk-low-retro-se-hj9121815-original-1730903092281247708?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO%26whid%3D16055520
+2025-12-09 13:12:50,806 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:51,236 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:51,336 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-remark-forest-42-e5ab0?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:52,999 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:53,392 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:53,535 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-x-grace-tahir-fc-x-gt-1730814618832701373?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:12:55,278 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:55,751 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:55,897 - INFO - Mengambil data dari: https://www.tokopedia.com/hoopsdept/sepatu-sneakers-pria-nike-court-vision-low-next-nature-dh2987001-original-1732877520142829046?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO%26whid%3D16055520
+2025-12-09 13:12:58,276 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:58,623 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:58,913 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-remark-ocean-white-36-04949?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:03,986 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:04,454 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:04,609 - INFO - Mengambil data dari: https://www.tokopedia.com/hoopsdept/sepatu-sneakers-pria-adidas-samba-og-ih3118-original-1731318304615663094?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO%26whid%3D16055520
+2025-12-09 13:13:06,851 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:07,403 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:07,470 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/nike-victori-one-slide-white-100-authentic-40?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:09,583 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:10,017 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:10,098 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/air-jordan-1-high-royal-toe-100-authentic-42?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:11,679 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:12,265 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:12,311 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/nike-dunk-high-black-white-panda-100-authentic-42?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:14,898 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:15,291 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:15,317 - INFO - Mengambil data dari: https://www.tokopedia.com/finecounsel/fine-counsel-moxie-koala-37-0a36f?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:17,571 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:18,024 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:18,182 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/air-jordan-1-high-black-gym-red-100-authentic-44-5?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:19,977 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:20,352 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:20,432 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/new-balance-550-white-black-oreo-100-authentic-42?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:22,372 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:22,768 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:22,882 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/air-jordan-1-ko-white-black-100-authentic-42?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:24,513 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:25,036 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:25,104 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/air-jordan-1-mid-se-sesame-wmns-100-original-42?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:26,726 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:27,120 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:27,162 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/nike-dunk-low-chicago-split-100-authentic-42-5-e3ce0?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:29,399 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:29,848 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:29,879 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/air-jordan-1-mid-armory-navy-100-authentic-42?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:31,757 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:32,275 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:32,311 - INFO - Mengambil data dari: https://www.tokopedia.com/wdmofficial/sepatu-sneakers-pria-flyknit-upper-stinger-06-black-38?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:34,878 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:35,301 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:35,560 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/air-jordan-4-bred-reimagined-100-authentic-43-8206c?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:37,352 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:37,760 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:37,823 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakers4play/air-jordan-4-se-craft-photon-dust-100-authentic-42-5?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:42,991 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:43,439 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:43,476 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-kets-uniseks-roma-68-revival-white-club-navy-gum-1731432183778673977?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:45,792 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:46,199 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:46,408 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-up-trainers-uniseks-white-team-gold-1732155457020396857?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:51,266 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:51,674 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:51,939 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-sneaker-slipstream-bball-white-archive-green-1732780114629264697?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:54,353 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:54,804 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:55,255 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-sneaker-smash-3-0-l-white-navy-gold-1730921994557293881?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:13:57,147 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:13:57,559 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:13:57,871 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sneaker-easy-rider-vintage-clyde-royal-white-1731432157679027513?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:00,687 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:01,105 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:01,556 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/hot-product-puma-sepatu-slip-on-softride-enzo-evo-uniseks-snow-white-gold-1732720067689678137?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:03,503 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:03,881 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:04,130 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-hypnotic-sneakers-uniseks-black-silver-white-1732720073261942073?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:05,995 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:06,388 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:06,783 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-sneaker-teveris-nitro-metallic-black-gold-gray-1732780105885910329?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:08,996 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:09,329 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:09,566 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-sepak-bola-pria-future-play-it-blue-pro-green-1732780117102789945?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:11,442 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:11,806 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:11,961 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-sneaker-unisex-gv-special-base-white-glacial-gray-1732370728428799289?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:14,112 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:14,777 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:15,266 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-park-lifestyle-sk8-sneakers-unisex-black-white-1733109557282178361?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:17,291 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:17,677 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:18,065 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-sneaker-tifosi-grande-unisex-white-mauve-mist-1732780061555393849?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:22,074 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:22,598 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:22,852 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/hot-product-puma-sepatu-sneaker-court-ultra-white-white-silver-1731177145484936505?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:25,377 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:25,759 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:26,382 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-sneaker-pria-trinity-lite-white-mauved-out-vapor-gray-lapis-lazuli-1730922140000093497?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:30,312 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:30,729 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:31,056 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-kets-uniseks-suede-classic-black-white-1731132630873310521?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:33,234 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:33,607 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:34,197 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-sneaker-blktop-rider-warm-white-white-1731431760948921657?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:35,976 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:36,429 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:14:36,740 - INFO - Mengambil data dari: https://www.tokopedia.com/puma-official/puma-sepatu-training-pwr-nitro-sqd-2-unwavered-black-gray-yellow-1731432162040251705?extParam=ivf%3Dfalse%26search_id%3D20251209061121577BCC914F9E5536C2RO
+2025-12-09 13:14:39,292 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:14:39,825 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"

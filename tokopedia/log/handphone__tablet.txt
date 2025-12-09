@@ -1,0 +1,180 @@
+2025-12-09 13:08:59,019 - INFO - Scraping untuk setiap kategori Handphone & Tablet setiap child kategori 100 halaman.
+
+2025-12-09 13:09:08,681 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-robot-uno-series-charger-gan-nexode-pd-fast-charging-100w-45515b-25685b-1731612417407092230?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:09:11,291 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:11,693 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:11,856 - INFO - Mengambil data dari: https://www.tokopedia.com/acefast-id/ultra-thin-charger-pd-30w-acefast-pwrup-a69-usb-c-super-fast-charging?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:09:14,791 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:15,235 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:15,254 - INFO - Mengambil data dari: https://www.tokopedia.com/bintangrayacom/converter-rexus-rx-tcp01-rx-tcp01-type-c-to-usb-3-1-otg-10gpbs-hitam?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:09:18,463 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:18,898 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:18,912 - INFO - Mengambil data dari: https://www.tokopedia.com/acefast-id/mini-charger-gan-pd-30w-acefast-pwrup-a77-usb-c-super-fast-charging?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:09:21,077 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:22,067 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:22,083 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-wall-charger-kepala-adaptor-gan-20w-type-c-fast-charging-90664-15324-1731612425462842886?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:09:23,968 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:24,358 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:24,412 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-kepala-charger-gan-n-45w-ultra-pd-type-c-super-fast-charging-2-0-65052-1731999962143229446?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:09:26,214 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:26,858 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:26,876 - INFO - Mengambil data dari: https://www.tokopedia.com/tenveoauthorized/tenveo-kabel-type-c-for-ptz-camera-3m?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:09:28,503 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:28,849 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:28,863 - INFO - Mengambil data dari: https://www.tokopedia.com/acefast-id/kabel-led-charger-acefast-acewire-pro-c7-04-usb-a-to-usb-c-fast-charging-data-cable-1729928259982951706?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:09:30,682 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:32,260 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:32,285 - INFO - Mengambil data dari: https://www.tokopedia.com/bandarmusikjakarta/lava-airflow-wireless-charger-bmj?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:09:34,174 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:34,635 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:34,651 - INFO - Mengambil data dari: https://www.tokopedia.com/koolpop/goui-kimba-pd36w-qc3-0-5-ports-desktop-charger?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:09:36,852 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:37,302 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:37,320 - INFO - Mengambil data dari: https://www.tokopedia.com/koolpop/budi-326re-pd-65w-dual-usb-c-gan-wall-charger?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:09:39,185 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:39,803 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:39,819 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/anker-gan-charger-25w-usb-type-c-pd-pps-20w-fast-charging-a2656-1730782987087611426?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:09:42,315 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:42,663 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:42,697 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/kabel-converter-hdmi-to-vga-female-ugreen-for-pc-laptop-tv-proyektor-1730833334820177442?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:09:45,960 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:46,326 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:46,343 - INFO - Mengambil data dari: https://www.tokopedia.com/hepuofficialstore/desktop-charger-fast-station-gan-140w-hepu-hp-308-pps-qc-4-0-pd-3-0-afc-scp?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:09:49,097 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:49,464 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:49,483 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/anker-powerdrive-iii-duo-usb-c-car-charger-fast-charging-40w-2-port-a2724013-1730107632254682630?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:09:56,352 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:56,819 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:56,833 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/anker-zolo-gan-20w-adaptor-charger-iphone-15-samsung-type-c-pd-ice-cooled-fast-charging-a2699-1730969772300797474?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:09:58,870 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:09:59,304 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:09:59,413 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-charger-nexode-gan-35w-fast-charging-dual-port-usb-a-usb-c-15539-1731777925585274374?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:01,556 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:02,069 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:02,092 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-bluetooth-receiver-5-0-transmitter-2-in-1-with-3-5mm-80893-1731083606973974050?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:06,117 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:06,601 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:06,627 - INFO - Mengambil data dari: https://www.tokopedia.com/acefast-id/kepala-charger-gan-pd100w-acefast-pwrup-a37-usb-a-usb-c-power-delivery?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:10:09,309 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:09,683 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:09,728 - INFO - Mengambil data dari: https://www.tokopedia.com/acefast-id/kepala-charger-gan-pd-30w-acefast-pwrup-a21-usb-c-super-fast-charging?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:10:11,877 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:12,483 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:12,509 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-kepala-charger-gan-nexode-type-c-fast-charging-30w-15326-90666-white-15326-2fc40?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:15,985 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:16,509 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:16,546 - INFO - Mengambil data dari: https://www.tokopedia.com/hepuofficialstore/hepu-safety-fast-travel-charger-hp-608-usb-a-type-c-iphone-fully-compatible-c-to-c-5da95?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:10:18,351 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:18,793 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:18,827 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-kepala-charger-gan-type-c-fast-charging-30w-65009-65010-65011-1731137560014259746?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:20,726 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:21,084 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:21,146 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-hdmi-splitter-1-in-4-out-amplifier-video-full-hd-4k-40203-1-in8-out-a7246?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D17407684
+2025-12-09 13:10:22,941 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:23,380 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:23,497 - INFO - Mengambil data dari: https://www.tokopedia.com/acefast-id/kepala-charger-adaptor-pd-20w-acefast-pwrup-a1-usb-c-fast-charging?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:10:25,247 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:25,624 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:25,642 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-kabel-hdmi-to-hdmi-4k-60hz-18gbps-ultra-hd-1-10-meter-10106-10108-10109-10110-1731612418331215366?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:29,161 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:29,545 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:29,590 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-hdmi-switch-3-in-1-out-switcher-splitter-4k-30hz-hd-resolution-3d-display-80125-1731612421823366662?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:34,221 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:34,587 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:34,607 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-kepala-charger-gan-n-45w-ultra-pd-type-c-super-fast-charging-2-0-65053-1732501077688681990?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:37,812 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:38,182 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:38,204 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-kepala-charger-iphone-11-pro-pd-type-c-fast-charging-20w-10191-60450-15049-1731999775540545030?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:40,026 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:40,498 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:40,543 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-kepala-charger-gan-nexode-65w-usb-type-c-fast-charging-10335-1730152306640324102?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:10:44,235 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:44,633 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:44,650 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-charger-30w-gan-dual-usb-port-usb-a-dan-type-c-fast-charging-65016-1731976537379210758?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:46,943 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:47,342 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:47,382 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/anker-zolo-gan-30w-adaptor-type-c-pd-ice-cooled-fast-charging-a2698-30w-gan-black-f34e1?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:49,208 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:49,629 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:49,680 - INFO - Mengambil data dari: https://www.tokopedia.com/super-gameshop/usb-dongle-wireless-bluetooth-usb-for-nintendo-switch-controller?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:10:51,437 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:51,850 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:51,876 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-charger-set-gan-for-samsung-usb-type-c-pd-super-fast-charging-45w-65054-1732493200877716998?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:53,984 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:54,378 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:54,393 - INFO - Mengambil data dari: https://www.tokopedia.com/clickandgo/tp-link-ue300-converter-usb-to-lan-for-pc-laptop-link-ue-300-tplink-1729814200865228036?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:10:56,622 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:57,838 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:57,933 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-kepala-charger-dual-port-usb-a-usb-type-c-for-android-iphone-fast-charging-20w-65006-1731974256018163206?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:10:59,506 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:10:59,836 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:10:59,863 - INFO - Mengambil data dari: https://www.tokopedia.com/hepuofficialstore/hepu-smart-socket-hp-h06-fast-charger-3-socket-2-usb-2-type-c?extParam=ivf%3Dtrue%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:01,610 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:01,977 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:02,010 - INFO - Mengambil data dari: https://www.tokopedia.com/get-wid/kepala-charger-fast-charging-getgard-pd-33w-adaptor-pps-pd-multi-port-for-samsung-iphone-batok-adapter-1731587046742787634?extParam=ivf%3Dtrue%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:04,372 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:04,861 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:05,026 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/ugreen-kepala-charger-gan-type-c-fast-charging-30w-65009-65010-65011-1731470027401889286?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:11:08,185 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:08,649 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:08,713 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/packing-kayu-tv-monitor-laptop-aio-pc?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:11:10,755 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:11,263 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:11,279 - INFO - Mengambil data dari: https://www.tokopedia.com/ggstore-sby/anker-zolo-gan-20w-adaptor-kepala-charger-iphone-type-c-to-lightning-pd-ice-cooled-fast-charging-b2699-1731081438917068322?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE%26whid%3D11418073
+2025-12-09 13:11:14,093 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:14,516 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:14,556 - INFO - Mengambil data dari: https://www.tokopedia.com/bandarmusikjakarta/hosa-acd-477-universal-power-adaptor-bmj?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:18,738 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:19,111 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:19,134 - INFO - Mengambil data dari: https://www.tokopedia.com/noir-gear-official/noir-type-c-coiled-cable-yc8-aviator-olive-green?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:23,215 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:23,571 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:23,615 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/aukey-pa-r1p-bk-charger-type-c-30w-pd-3-0-fast-charging-1729729131461904144?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:25,583 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:25,996 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:26,012 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/anker-prime-charging-200w-6-port-gan-desktop-charge-type-c-pd-fast-charging-charging-station-compatible-for-iphone-samsung-macbook-a2683-1731698444993595152?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:27,616 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:28,009 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:28,024 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/vention-aleh-kabel-hdmi-ultra-thin-slim-male-to-male-4k-1731071609955649274?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:32,604 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:33,124 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:33,190 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/aukey-pa-f5-bk-charger-port-type-c-20w-fast-charging-1729729130556655376?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:35,768 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:36,269 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:36,292 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/aukey-pa-b4t-bk-charger-dual-port-type-c-45w-gan-pd-3-0-fast-charging-1729729138091984656?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:38,265 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:38,631 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:38,644 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/anker-zolo-30w-b2b-charger-usb-c-port-pd-3-0-b2698-1731705163994924816?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:40,253 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:40,704 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:40,738 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/anker-zolo-gan-20w-adaptor-kepala-charger-iphone-15-samsung-type-c-pd-ice-cooled-fast-charging-a2699-1731346913554564858?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:42,435 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:42,886 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:42,921 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/aukey-pa-b2t-bk-charger-type-c-45w-gan-pd-3-0-pps-fast-charging-1729729136688793360?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:45,086 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:45,471 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:45,492 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/nodx-spark-lite-mini-charger-fast-charging-20w-pd-c20021-1729566741143586576?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:47,596 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:47,941 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:47,960 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/aukey-pa-r2s-bk-charger-dual-port-type-c-40w-pd-3-0-fast-charging-1729729131095885584?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:50,236 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:50,612 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:50,647 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/winkey-wa652c1a-charger-igan-pro-65w-3-port-pd-pps-usb-c-usb-c?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:54,036 - ERROR - Layout key tidak ditemukan.
+2025-12-09 13:11:54,043 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/anker-zolo-gan-30w-20w-adaptor-kepala-charger-iphone-16-15-samsung-type-c-pd-ice-cooled-fast-charging-a2698-1731698484558268176?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:55,713 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:56,118 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:56,147 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/aukey-pa-t16-bk-charger-dual-port-usb-a-3-0-36w-quick-charge-1729729128660829968?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:11:58,038 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:11:58,481 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:11:58,497 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/anker-wall-charger-powerport-20w-usb-a-usb-c-a2348-1730881245041428218?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:12:00,441 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:00,770 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:00,805 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/ugreen-charger-gan-type-c-fast-charging-30w-90666?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:12:02,570 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:02,975 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-09 13:12:02,993 - INFO - Mengambil data dari: https://www.tokopedia.com/risccomputer/nodx-spark-prime-charger-adaptor-fast-charging-100w-4-port-1730768997551867642?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:12:03,583 - ERROR - Error scraping https://www.tokopedia.com/risccomputer/nodx-spark-prime-charger-adaptor-fast-charging-100w-4-port-1730768997551867642?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE: 410 Client Error: Gone for url: https://www.tokopedia.com/risccomputer/nodx-spark-prime-charger-adaptor-fast-charging-100w-4-port-1730768997551867642?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:12:03,595 - INFO - Mengambil data dari: https://www.tokopedia.com/ankerofficialjogja/anker-zolo-gan-20w-30w-adaptor-kepala-charger-iphone-15-samsung-type-c-pd-ice-cooled-fast-charging-a2698-a2699-20w-gan-ice-wht-1730989580475466902?extParam=ivf%3Dfalse%26search_id%3D202512090609073DD48AB31D016F217LAE
+2025-12-09 13:12:09,939 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 13:12:10,290 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"

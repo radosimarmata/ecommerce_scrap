@@ -25,6 +25,7 @@ services:
         ollama serve &
         sleep 3 &&
         ollama pull all-minilm:l6-v2 &&
+        ollama pull phi3:mini &&
         wait
       "
 
