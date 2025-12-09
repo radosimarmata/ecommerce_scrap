@@ -1,0 +1,7 @@
+2025-12-09 15:19:22,432 - INFO - Scraping untuk setiap kategori Fashion Wanita setiap child kategori 100 halaman.
+
+2025-12-09 15:19:36,256 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakypairofficial/sneakypair-dash-unchained-sky-blue-sepatu-wanita-sneakers-sport-shoes-1729630182675744606?extParam=ivf%3Dtrue%26search_id%3D2025120908193513F9896DF612792D0HF0
+2025-12-09 15:19:38,014 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakypairofficial/sneakypair-unity-ireland-sepatu-wanita-sneakers-sport-shoes-1729710882082817886?extParam=ivf%3Dtrue%26search_id%3D2025120908193513F9896DF612792D0HF0
+2025-12-09 15:19:39,160 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakypairofficial/sneakypair-dash-unchained-that-summer-day-sepatu-wanita-sneakers-shoes-1729771947618043742?extParam=ivf%3Dtrue%26search_id%3D2025120908193513F9896DF612792D0HF0
+2025-12-09 15:19:43,471 - INFO - Mengambil data dari: https://www.tokopedia.com/sneakypairofficial/sneakypair-strada-mythical-forest-sepatu-wanita-sneakers-sport-shoes-1729444921662802782?extParam=ivf%3Dtrue%26search_id%3D2025120908193513F9896DF612792D0HF0
+2025-12-09 15:19:44,519 - INFO - Mengambil data dari: https://www.tokopedia.com/asicsofficial/asics-women-japan-s-1202a118-139-1732244481037534428?extParam=ivf%3Dfalse%26search_id%3D2025120908193513F9896DF612792D0HF0

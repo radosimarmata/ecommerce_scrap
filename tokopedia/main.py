@@ -225,26 +225,26 @@ def save_product_and_chunks(products_data, l1, l2, l3):
       print(f"Save product: {name}")
       print("="*50)
       
-      if current_parent_id is None:
-        cur.execute(delete_old_chunks_query, (product_id,))
-      
-        chunk_text = clean_title_with_openai(name, l1, l2, l3)
-        print(f"results: {chunk_text}")
-        print("-"*50)
+      # if current_parent_id is None:
+      cur.execute(delete_old_chunks_query, (product_id,))
+    
+      chunk_text = clean_title_with_openai(name, l1, l2, l3)
+      print(f"results: {chunk_text}")
+      print("-"*50)
 
-        embedding = generate_embedding(chunk_text)
+      embedding = generate_embedding(chunk_text)
 
-        if embedding:
-          embedding_str = f"[{','.join(map(str, embedding))}]"
+      if embedding:
+        embedding_str = f"[{','.join(map(str, embedding))}]"
 
-          cur.execute(
-            insert_chunk_query,
-            (
-              product_id,
-              chunk_text,
-              embedding_str
-            )
+        cur.execute(
+          insert_chunk_query,
+          (
+            product_id,
+            chunk_text,
+            embedding_str
           )
+        )
 
   
 # ------------------------------------------------------------

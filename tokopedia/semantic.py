@@ -47,7 +47,14 @@ def ai_understand(query: str, categories_level_2: list) -> dict:
     "Contoh Output:\n"
     "{\n"
     "  \"category_level_2_matches\": [\"Elektronik\", \"Audio\"], "
-    "  \"brand\": \"Sony\"\n"
+    "  \"brand\": \"Sony\",\n"
+    "  \"filters\": {\n"
+        "    \"color\": \"merah\",\n"
+        "    \"location\": \"jakarta\",\n"
+        "    \"condition\": \"bekas\"\n"
+        "    \"harga_min\": 100000,\n"
+        "    \"harga_max\": 5000000\n"
+        "  }\n"
     "}"
   )
 
@@ -110,8 +117,8 @@ def generate_embedding(text: str):
   )
   return resp.data[0].embedding
 
-def final_product_search(cur, query_vector, l3_category_id, top_k=10):
-  base_sql = f"""
+def final_product_search(cur, query_vector, l3_category_id, top_k=50, filters=None):
+  base_sql = """
     SELECT
       pc.product_id,
       p.name AS product_name,
@@ -121,20 +128,55 @@ def final_product_search(cur, query_vector, l3_category_id, top_k=10):
       (pc.embedding <=> %s::vector) AS distance
     FROM products p 
     JOIN product_chunks pc ON p.id = pc.product_id
-    WHERE
-      p.category_id = %s
-    ORDER BY
-      distance ASC
-    LIMIT {top_k};
   """
-  cur.execute(base_sql, (query_vector, l3_category_id))
+  where_clause = f" WHERE 1=1 AND p.category_id = '{l3_category_id}' and p.stock > 0"
+  filter_params = []
+
+  print(filters)
+
+  if filters.get("location"):
+    where_clause += " AND p.shop_location ILIKE %s "
+    filter_params.append(f"%{filters['location']}%")
+
+  if filters.get("color"):
+    where_clause += " AND p.variant_spec ->> 'warna' ILIKE %s "
+    filter_params.append(f"%{filters['color']}%")
+
+  if filters.get("condition"):
+    where_clause += " AND p.detail ->> 'kondisi' ILIKE %s "
+    filter_params.append(f"%{filters['condition']}%")
   
+  harga_min_val = filters.get("harga_min")
+  harga_max_val = filters.get("harga_max")
+  if harga_min_val and harga_max_val and str(harga_min_val) == str(harga_max_val):
+    where_clause += " AND p.price =  %s "
+    filter_params.append(harga_min_val)
+  elif harga_min_val and harga_max_val:
+    where_clause += " AND p.price BETWEEN %s AND %s "
+    filter_params.append(harga_min_val)
+    filter_params.append(harga_max_val)
+  elif harga_min_val:
+    where_clause += " AND p.price >= %s "
+    filter_params.append(harga_min_val)
+  elif harga_max_val:
+    where_clause += " AND p.price <= %s "
+    filter_params.append(harga_max_val)
+
+  final_sql = base_sql + where_clause + """
+    ORDER BY pc.embedding <=> %s::vector
+    LIMIT %s;
+  """
+
+  params = [query_vector] + filter_params + [query_vector, top_k]
+
+  cur.execute(final_sql, tuple(params))
+
   return cur.fetchall()
 
 # =============================
 # SEMANTIC SEARCH
 # =============================
-def semantic_search(user_query: str, top_k=10):
+def semantic_search(user_query: str, top_k=50):
   conn = connect_db()
   cur = conn.cursor(cursor_factory=RealDictCursor)
 
@@ -152,11 +194,10 @@ def semantic_search(user_query: str, top_k=10):
   categories_level_2 = cur.fetchall()
 
   parsed_query = ai_understand(user_query, categories_level_2)
-  print(parsed_query)
 
   matched_l2_names = parsed_query.get('category_level_2_matches', [])
-  
-  print(matched_l2_names)
+  filtered_query = parsed_query.get('filters', [])
+
   matched_l2_ids = []
   for cat in categories_level_2:
     if cat['level_2_name'] in matched_l2_names:
@@ -192,7 +233,7 @@ def semantic_search(user_query: str, top_k=10):
           
           try:
             query_vector = generate_embedding(user_query)
-            products_results = final_product_search(cur, query_vector, l3_id, top_k)
+            products_results = final_product_search(cur, query_vector, l3_id, top_k, filtered_query)
             
             if products_results:
               print(f"🎉 Ditemukan {len(products_results)} produk yang paling relevan.")
@@ -226,7 +267,7 @@ def main():
       print("Bye!")
       break
 
-    results = semantic_search(query, top_k=3)
+    results = semantic_search(query, top_k=10)
 
     print("\n=== HASIL PENCARIAN ===\n")
 
@@ -236,7 +277,8 @@ def main():
 
     for i, r in enumerate(results, start=1):
       print(f"{i}. {r['product_name']} (Rp {r['product_price']})")
-      print(f"   URL: {r['product_url']}")
+      print(f"   url: {r['product_id']}")
+      print(f"   url: {r['product_url']}")
       print(f"   Cocok Karena: {r['chunk_text']}")
       print(f"   Score: {r['distance']}\n")
 
