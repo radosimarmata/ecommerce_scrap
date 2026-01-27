@@ -71,6 +71,13 @@ class TokopediaScraper:
             specs[clean_key] = self._clean_text(subtitle)
           else:
             specs[clean_key] = subtitle
+
+      if "productDetailDescription" in detail_group:
+        description_ref = detail_group.get("productDetailDescription", {})
+        description_obj = self._resolve(data_cache, description_ref.get("id"))
+        if description_obj:
+          desc_text = description_obj.get("content", "")
+          specs["deskripsi"] = self._clean_text(desc_text)
     return specs
 
   def _extract_variants(self, data_cache: Dict, component_data: List) -> List[Dict]:
@@ -176,7 +183,7 @@ class TokopediaScraper:
     shop_location = item.get('shop_location', 'N/A')
     
     price = item.get('product_price')
-        
+
     details = item.get("product_detail", {})
     description = details.get("deskripsi", "Deskripsi produk tidak tersedia.")
     
@@ -234,6 +241,11 @@ class TokopediaScraper:
       resp.raise_for_status()
       html = resp.text
       
+      # save to html
+      debug_html_path = os.path.join(self.output_dir, "debug_page.html")
+      with open(debug_html_path, "w", encoding="utf-8") as f:
+        f.write(html)
+
       pattern = r'window.__cache\s*=\s*(\{.*?\})\s*;'
       match = re.search(pattern, html, re.DOTALL)
       if not match:
@@ -245,9 +257,14 @@ class TokopediaScraper:
 
       json_str = match.group(1).strip()
       data = json.loads(json_str)
+
+      # save for debugging
+      debug_path = os.path.join(self.output_dir, "debug_full_cache.json")
+      with open(debug_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
       
       root = data.get("ROOT_QUERY", {})
-      layout_key = next((k for k in root if k.startswith("pdpGetLayout")), None)
+      layout_key = next((k for k in root if k.startswith("pdpMainInfo")), None)
       
       if not layout_key:
         logger.error("Layout key tidak ditemukan.")
@@ -256,8 +273,10 @@ class TokopediaScraper:
       layout_container = self._resolve(data, root[layout_key].get("id"))
       
       # Basic Info
-      basic_ref = layout_container.get("basicInfo", {})
-      basic_info = self._resolve(data, basic_ref.get("id"))
+      data_ref = layout_container.get("data", {})
+      basic_info_ref = self._resolve(data, data_ref.get("id"))
+      basic_info_id = basic_info_ref.get("basicInfo", {}).get("id")
+      basic_info = self._resolve(data, basic_info_id)
       
       # Stats
       stats_ref = basic_info.get("txStats", {})
@@ -361,7 +380,10 @@ class TokopediaScraper:
 
 # --- Main Execution ---
 if __name__ == "__main__":
-  url = "https://www.tokopedia.com/trinitycomp/core-i7-gen-8-termurah-lenovo-thinkpad-x280-laptop-setipis-x1-carbon-i3-gen-8-4gb-no-storage-78c0c?extParam=ivf%3Dfalse%26keyword%3Dlenovo+thinkpad%26search_id%3D20251202085536EFE937780E95572B38S6%26src%3Dsearch&t_id=1764665719094&t_st=2&t_pp=search_result&t_efo=search_pure_goods_card&t_ef=goods_search&t_sm=&t_spt=search_result"
+  # url = "https://www.tokopedia.com/trinitycomp/core-i7-gen-8-termurah-lenovo-thinkpad-x280-laptop-setipis-x1-carbon-i3-gen-8-4gb-no-storage-78c0c?extParam=ivf%3Dfalse%26keyword%3Dlenovo+thinkpad%26search_id%3D20251202085536EFE937780E95572B38S6%26src%3Dsearch&t_id=1764665719094&t_st=2&t_pp=search_result&t_efo=search_pure_goods_card&t_ef=goods_search&t_sm=&t_spt=search_result"
+  # url = "https://www.tokopedia.com/orilink/samsung-galaxy-z-fold-7-12-256-12-512-16gb-12gb-256gb-512gb-1tb-smartphone-ai-fold7-1732138124478219997?extParam=ivf%3Dfalse%26keyword%3Dsamsung+fold+7%26search_id%3D20260127043956AD13A2A07CA4B72625I3%26src%3Dsearch&t_id=1769488810028&t_st=1&t_pp=search_result&t_efo=search_pure_goods_card&t_ef=goods_search&t_sm=&t_spt=search_result"
+  # url = "https://www.tokopedia.com/enterelectronic/toshiba-65z670mp-gaming-tv-144hz-full-array-quantum-dot-4k-65-inch-dolby-vision-iq-65z670-mp?t_id=1769488810028&t_st=2&t_pp=product_detail&t_efo=horizontal_goods_card&t_ef=goods_search&t_sm=rec_product_detail_outer_pdp_3_module&t_spt=product_detail"
+  url = "https://www.tokopedia.com/vinsteknikbekasi/dongcheng-dsm21-100bc-mesin-gerinda-tangan-4-angle-grinder-dsm21-100-1730874716984674240?extParam=ivf%3Dfalse%26keyword%3Dgerinda+dongcheng%26search_id%3D20260127075731577BCC914F9E55014SEN%26src%3Dsearch&t_id=1769500683889&t_st=1&t_pp=search_result&t_efo=search_pure_goods_card&t_ef=goods_search&t_sm=&t_spt=search_result"
   
   scraper = TokopediaScraper()
   results = scraper.scrape(url)

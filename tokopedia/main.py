@@ -347,8 +347,15 @@ def scrape_page(url, l1_selected, l2_selected, l3_selected):
             try:
               scraper = TokopediaScraper()
               results = scraper.scrape(product_url)
-              
-              save_product_and_chunks(results, l1_selected, l2_selected, l3_selected)
+
+              # save to json file
+              file_path = "output"
+              os.makedirs(file_path, exist_ok=True)
+              with open(os.path.join(file_path, f"{ace_product_id}.json"), 'w', encoding='utf-8') as f:
+                json.dump(results, f, ensure_ascii=False, indent=2)
+              print(f"Scraped product URL: {results}")
+
+              # save_product_and_chunks(results, l1_selected, l2_selected, l3_selected)
             except Exception as product_e:
               logging.error(f"[{L3_NAME}] GAGAL SCRAPE PRODUK (URL: {product_url}): {product_e}. Lanjut ke produk berikutnya.")
             
