@@ -3,12 +3,14 @@ import json
 
 url = "https://gql.tokopedia.com/graphql/PDPMainInfo"
 
+# product key from product URL
+# shop domain from product URL
 payload = json.dumps([
   {
     "operationName": "PDPMainInfo",
     "variables": {
-      "productKey": "huawei-matepad-se-11-tablet-4-128gb-fhd-eye-comfort-display-7700mah-metal-unibody-grey-78825",
-      "shopDomain": "huawei",
+      "productKey": "dongcheng-dsm21-100bc-mesin-gerinda-tangan-4-angle-grinder-dsm21-100-1730874716984674240",
+      "shopDomain": "vinsteknikbekasi",
       "layoutID": "",
       "extraPayload": "",
       "queryParam": "",
