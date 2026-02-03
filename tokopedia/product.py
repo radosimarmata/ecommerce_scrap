@@ -145,7 +145,7 @@ class TokopediaScraper:
               if city:
                 return city
 
-    return "Lokasi tidak ditemukan"
+    return None
 
   def _extract_reviews(self, data_cache: Dict) -> Dict:
     root = data_cache.get("ROOT_QUERY", {})
@@ -235,17 +235,16 @@ class TokopediaScraper:
     return output.strip()
 
   def scrape(self, url: str) -> List[Dict]:
-    logger.info(f"Mengambil data dari: {url}")
+    logger.info(f"URL: {url}")
     try:
       resp = requests.get(url, headers=self.headers, timeout=20)
       resp.raise_for_status()
       html = resp.text
       
       # save to html
-      filename = re.sub(r'[^a-zA-Z0-9]', '_', url)
-      debug_html_path = os.path.join(self.output_dir, f"debug_page.html")
-      with open(debug_html_path, "w", encoding="utf-8") as f:
-        f.write(html)
+      # debug_html_path = os.path.join(self.output_dir, f"debug_page.html")
+      # with open(debug_html_path, "w", encoding="utf-8") as f:
+      #   f.write(html)
 
       pattern = r'window.__cache\s*=\s*(\{.*?\})\s*;'
       match = re.search(pattern, html, re.DOTALL)
@@ -260,9 +259,9 @@ class TokopediaScraper:
       data = json.loads(json_str)
 
       # save for debugging
-      debug_path = os.path.join(self.output_dir, f"debug_full_cache.json")
-      with open(debug_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+      # debug_path = os.path.join(self.output_dir, f"debug_full_cache.json")
+      # with open(debug_path, "w", encoding="utf-8") as f:
+      #   json.dump(data, f, ensure_ascii=False, indent=2)
       
       root = data.get("ROOT_QUERY", {})
       layout_key = next((k for k in root if k.startswith("pdpMainInfo")), None)
@@ -381,11 +380,8 @@ class TokopediaScraper:
 
 # --- Main Execution ---
 if __name__ == "__main__":
-  # url = "https://www.tokopedia.com/trinitycomp/core-i7-gen-8-termurah-lenovo-thinkpad-x280-laptop-setipis-x1-carbon-i3-gen-8-4gb-no-storage-78c0c?extParam=ivf%3Dfalse%26keyword%3Dlenovo+thinkpad%26search_id%3D20251202085536EFE937780E95572B38S6%26src%3Dsearch&t_id=1764665719094&t_st=2&t_pp=search_result&t_efo=search_pure_goods_card&t_ef=goods_search&t_sm=&t_spt=search_result"
-  # url = "https://www.tokopedia.com/orilink/samsung-galaxy-z-fold-7-12-256-12-512-16gb-12gb-256gb-512gb-1tb-smartphone-ai-fold7-1732138124478219997?extParam=ivf%3Dfalse%26keyword%3Dsamsung+fold+7%26search_id%3D20260127043956AD13A2A07CA4B72625I3%26src%3Dsearch&t_id=1769488810028&t_st=1&t_pp=search_result&t_efo=search_pure_goods_card&t_ef=goods_search&t_sm=&t_spt=search_result"
-  # url = "https://www.tokopedia.com/enterelectronic/toshiba-65z670mp-gaming-tv-144hz-full-array-quantum-dot-4k-65-inch-dolby-vision-iq-65z670-mp?t_id=1769488810028&t_st=2&t_pp=product_detail&t_efo=horizontal_goods_card&t_ef=goods_search&t_sm=rec_product_detail_outer_pdp_3_module&t_spt=product_detail"
-  url = "https://www.tokopedia.com/vinsteknikbekasi/dongcheng-dsm21-100bc-mesin-gerinda-tangan-4-angle-grinder-dsm21-100-1730874716984674240?extParam=ivf%3Dfalse%26keyword%3Dgerinda+dongcheng%26search_id%3D20260127075731577BCC914F9E55014SEN%26src%3Dsearch&t_id=1769500683889&t_st=1&t_pp=search_result&t_efo=search_pure_goods_card&t_ef=goods_search&t_sm=&t_spt=search_result"
   # url = "https://www.tokopedia.com/huawei/huawei-matepad-se-11-tablet-4-128gb-fhd-eye-comfort-display-7700mah-metal-unibody-grey-78825?t_id=1770013758049&t_st=1&t_pp=homepage&t_efo=pure_goods_card&t_ef=homepage&t_sm=rec_homepage_outer_flow&t_spt=homepage"
+  url = "https://www.tokopedia.com/enterelectronic/samsung-qa55ls01b-qled-the-serif-smart-tv-4k-55-inch-qa-55ls01-55ls01b-1731325257318368529?extParam=ivf%3Dfalse%26search_id%3D20260203080959F9B902FC3289AF3A5HNE"
   
   scraper = TokopediaScraper()
   results = scraper.scrape(url)

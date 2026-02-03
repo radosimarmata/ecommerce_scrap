@@ -134,10 +134,118 @@ def clean_title_with_openai(title: str, l1: str, l2: str, l3: str) -> str:
     print("❌ OpenAI Error:", e)
     return title
   
+def extract_json(text: str) -> dict:
+  """
+  Extract pure JSON from OpenAI response
+  """
+  try:
+    cleaned = re.sub(r"```json|```", "", text, flags=re.IGNORECASE).strip()
+    return json.loads(cleaned)
+  except Exception as e:
+    raise e
+
+def extract_variant_with_openai(product_name: str, variant_spec, category_attributes, product_description: str  ) -> dict:
+  try:
+    if isinstance(variant_spec, (dict, list)):
+      variant_spec_text = json.dumps(variant_spec, ensure_ascii=False)
+    else:
+      variant_spec_text = str(variant_spec)
+
+    product_description_text = product_description or ""
+
+    attr_lines = []
+    for attr_key, value_type, enum_values in category_attributes:
+      if value_type == "enum" and enum_values:
+        enums = ", ".join(enum_values)
+        attr_lines.append(f"{attr_key} (enum: {enums})")
+      else:
+        attr_lines.append(f"{attr_key} ({value_type})")
+
+    category_attr_text = "\n".join(attr_lines)
+
+    prompt = f"""
+You are a strict product attribute extractor.
+
+TASK:
+Extract product attributes strictly based on the provided category attributes.
+
+PRIORITY OF SOURCES (highest → lowest):
+1. VARIANT SPEC
+2. PRODUCT NAME
+3. PRODUCT DESCRIPTION
+
+RULES:
+1. Only extract attributes listed in CATEGORY ATTRIBUTES.
+2. Do NOT create or infer new attributes.
+3. If an attribute value is not clearly present in any source, return null.
+4. Normalize values only if rules are provided in CATEGORY ATTRIBUTES.
+5. Ignore promotions, shipping terms, guarantees, emojis, and marketing text.
+6. Do NOT guess or hallucinate.
+7. Do NOT override higher-priority sources with lower-priority ones.
+8. Output MUST be valid JSON only.
+
+CATEGORY ATTRIBUTES:
+{category_attr_text}
+
+PRODUCT NAME:
+{product_name}
+
+VARIANT SPEC (raw):
+{variant_spec_text}
+
+PRODUCT DESCRIPTION:
+{product_description_text}
+
+COLOR_NORMALIZATION = {{
+  "black": ["black", "jet", "midnight", "carbon", "obsidian", "onyx"],
+  "white": ["white", "pearl", "snow", "ivory", "ceramic", "milk"],
+  "gray": ["gray", "grey", "graphite", "gunmetal", "titanium", "charcoal", "ash"],
+  "silver": ["silver", "platinum", "chrome", "steel", "aluminum"],
+  "blue": ["blue", "navy", "sky", "baby", "ocean", "aqua", "cyan", "teal"],
+  "green": ["green", "forest", "olive", "mint", "emerald", "sage", "moss", "army", "lime"],
+  "red": ["red", "maroon", "burgundy", "wine", "crimson", "scarlet", "cherry"],
+  "brown": ["brown", "coffee", "chocolate", "mocha", "espresso", "walnut", "cocoa"],
+  "orange": ["orange", "peach", "coral", "copper", "tangerine"],
+  "yellow": ["yellow", "mustard", "honey", "amber", "lemon"],
+  "purple": ["purple", "violet", "lavender", "lilac", "plum", "amethyst", "grape"],
+  "pink": ["pink", "rose", "blush", "fuchsia", "magenta"],
+  "gold": ["gold", "champagne", "rose gold"],
+  "beige": ["beige", "sand", "nude", "khaki", "taupe"],
+  "cream": ["cream", "off-white", "eggshell", "vanilla"],
+}}
+
+OUTPUT FORMAT:
+JSON object with keys exactly matching attribute_key.
+""".strip()
+    
+    response = client.chat.completions.create(
+        model="gpt-4.1-mini",
+        temperature=0,
+        messages=[
+            {"role": "system", "content": "You are a deterministic extractor."},
+            {"role": "user", "content": prompt}
+        ]
+    )
+
+    content = response.choices[0].message.content.strip()
+
+    return extract_json(content)
+  
+  except json.JSONDecodeError as e:
+    print("JSON parse error:", e)
+    print("Raw output:", content)
+    return {}
+  except Exception as e:
+    print("OpenAI extract_variant error:", e)
+    return {}
+  
 # ------------------------------------------------------------
 # SAVE PRODUCT AND CHUNKS
 # ------------------------------------------------------------
 def save_product_and_chunks(products_data, l1, l2, l3):
+  print(f"Saving {len(products_data)} products to database...")
+  category_attributes = get_categories_attributes(l2[0])
+
   conn = ensure_connection()
   with conn.cursor() as cur:
     product_id_first = None  
@@ -200,18 +308,31 @@ def save_product_and_chunks(products_data, l1, l2, l3):
         current_parent_id = product_id_first
 
       name = product_data.get('product_name', '')
+      chunk_text = clean_title_with_openai(name, l1, l2, l3)
+      variant_spec_raw = json.dumps(product_data.get('variant_spec', {}))
+      product_detail_raw = product_data.get('product_detail', {})
+      variant_spec = extract_variant_with_openai(name, variant_spec_raw, category_attributes, product_detail_raw.get("deskripsi", ""))
+
+      # print(f"product: {name}")
+      print(f"name: {chunk_text}")
+      # print(f"product_detail: {product_detail_raw}")
+      # print(f"variant_spec: {variant_spec_raw}")
+      # print(f"results: {variant_spec}")
+
+      print("*"*50)
 
       cur.execute(insert_query_base, (
         'tokopedia',
         l3[0],
         product_data.get('shop_name'),
-        product_data.get('shop_location'),
+        None,
         product_data.get('product_name'),
         product_data.get('product_url'),
         product_data.get('product_price'),
         product_data.get('product_stock'),
         product_data.get('product_sold'),
-        json.dumps(product_data.get('variant_spec', {})),
+        # json.dumps(product_data.get('variant_spec', {})),
+        json.dumps(variant_spec),
         json.dumps(product_data.get('product_detail', {})),
         json.dumps(product_data.get('product_media', {})),
         json.dumps(product_data.get('product_reviews', {})),
@@ -227,26 +348,36 @@ def save_product_and_chunks(products_data, l1, l2, l3):
       
       # if current_parent_id is None:
       cur.execute(delete_old_chunks_query, (product_id,))
-    
-      chunk_text = clean_title_with_openai(name, l1, l2, l3)
-      print(f"results: {chunk_text}")
-      print("-"*50)
 
-      embedding = generate_embedding(chunk_text)
+      if is_parent == False :
+        embedding = generate_embedding(chunk_text)
 
-      if embedding:
-        embedding_str = f"[{','.join(map(str, embedding))}]"
+        if embedding:
+          embedding_str = f"[{','.join(map(str, embedding))}]"
 
-        cur.execute(
-          insert_chunk_query,
-          (
-            product_id,
-            chunk_text,
-            embedding_str
+          cur.execute(
+            insert_chunk_query,
+            (
+              product_id,
+              chunk_text,
+              embedding_str
+            )
           )
-        )
 
-  
+# ------------------------------------------------------------
+# GET CATEGORY ATTRIBUTES
+# ------------------------------------------------------------
+def get_categories_attributes(category_id=None):
+  conn = ensure_connection()
+  with conn.cursor() as cur:
+    cur.execute("""
+      SELECT attribute_key, value_type, enum_values 
+      FROM category_attributes
+      WHERE category_id = %s;
+    """, (category_id,))
+    
+    return cur.fetchall()
+
 # ------------------------------------------------------------
 # GET CATEGORY BY LEVEL
 # ------------------------------------------------------------
@@ -349,13 +480,12 @@ def scrape_page(url, l1_selected, l2_selected, l3_selected):
               results = scraper.scrape(product_url)
 
               # save to json file
-              file_path = "output"
-              os.makedirs(file_path, exist_ok=True)
-              with open(os.path.join(file_path, f"{ace_product_id}.json"), 'w', encoding='utf-8') as f:
-                json.dump(results, f, ensure_ascii=False, indent=2)
-              print(f"Scraped product URL: {results}")
+              # file_path = "output"
+              # os.makedirs(file_path, exist_ok=True)
+              # with open(os.path.join(file_path, f"{ace_product_id}.json"), 'w', encoding='utf-8') as f:
+              #   json.dump(results, f, ensure_ascii=False, indent=2)
 
-              # save_product_and_chunks(results, l1_selected, l2_selected, l3_selected)
+              save_product_and_chunks(results, l1_selected, l2_selected, l3_selected)
             except Exception as product_e:
               logging.error(f"[{L3_NAME}] GAGAL SCRAPE PRODUK (URL: {product_url}): {product_e}. Lanjut ke produk berikutnya.")
             
@@ -412,7 +542,7 @@ if __name__ == "__main__":
 
     total_pages = 100
     os.system(f'title " {l1_selected[1]}"')
-    logging.info(f"Scraping untuk setiap kategori {l1_selected[1]} setiap child kategori {total_pages} halaman.\n")
+    # logging.info(f"Scraping untuk setiap kategori {l1_selected[1]} setiap child kategori {total_pages} halaman.\n")
 
     # # ========================
     # # LOOP LEVEL 2
@@ -485,6 +615,7 @@ if __name__ == "__main__":
       # ==========================================
       total_pages = int(input("Masukkan jumlah halaman yang akan di-scrape: "))
       print(f"\nMulai scraping {total_pages} halaman...\n")
+      logging.info(f"Scraping untuk setiap kategori {l1_selected[1]} setiap child kategori {total_pages} halaman.\n")
 
       for page in range(1, total_pages + 1):
         if "?" in selected_l3_url:
