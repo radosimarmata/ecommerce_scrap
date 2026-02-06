@@ -8,3 +8,4 @@ webdriver-manager
 selenium-stealth
 python-dotenv
 openai
+spacy

@@ -4,14 +4,15 @@ import psycopg2
 import requests
 import re
 import json
-from product import TokopediaScraper
 import os
 import logging
 from dotenv import load_dotenv
+from openai import OpenAI
+from product import TokopediaScraper
+from product_name import classify_product
 
 load_dotenv()
 
-from openai import OpenAI
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 HEADERS = {
@@ -67,184 +68,12 @@ def generate_embedding(text):
   except Exception as e:
     print("Embedding error:", e)
     return None
-
-# ------------------------------------------------------------
-# CLEAN PRODUCT TITLE
-# ------------------------------------------------------------
-PROMPT_TEMPLATE = """
-  You are a deterministic product title normalizer for semantic embedding.
-
-  TASK:
-  Extract a clean and compact product title suitable for semantic embedding.
-
-  RULES:
-  - Keep the product type. (e.g., Battery, Battery Charger)
-  - KEEP brand names. (Canon, Brica, Citycall, Energizer)
-  - KEEP essential series/model identifiers. (LP-E8, AE1, AE2, M26, E91)
-  - REMOVE promo, bundle, count, B2G1, variant, color, etc.
-
-  ### STRICT RULES:
-  - Output ONLY the core product name.
-  - Do NOT add or invent words.
-  - Do NOT remove or rewrite core words.
-  - Do NOT include inch, cm, watt, GB, model numbers, year, variant, or color.
-  - Do NOT rephrase or translate.
-  - Do NOT output brand unless it is part of the product naming convention (e.g., “Honda Vario”).
-
-  ### EXAMPLES:
-  "Round Air Grill 4 inch Circular Air Diffuser" → "Air Grill"
-  "Rumah/cover Depan kipas angin maspion" → "cover kipas angin"
-  "iPhone 14 Pro Max 128GB Purple" → "iPhone 14"
-  "ASUS ROG Strix Z490 Gaming Motherboard" → "ASUS ROG Strix Motherboard"
-
-  ### CATEGORY LOCK:
-  L1: {l1}
-  L2: {l2}
-  L3: {l3}
-  You MUST NOT output anything not in the original title.
-
-  OUTPUT FORMAT:
-  "<Product Type> <Brand> <Series>"
-
-  Product Title:
-  "{title}"
-"""
-def clean_title_with_openai(title: str, l1: str, l2: str, l3: str) -> str:
-  """Clean product title using OpenAI model."""
-  try:
-    prompt = PROMPT_TEMPLATE.format(
-      title=title,
-      l1=l1,
-      l2=l2,
-      l3=l3
-    )
-
-    response = client.chat.completions.create(
-      model="gpt-4.1-mini",
-      messages=[
-        {"role": "system", "content": "You are a deterministic extractor."},
-        {"role": "user", "content": prompt}
-      ],
-      temperature=0
-    )
-
-    cleaned = response.choices[0].message.content.strip()
-    return cleaned if cleaned else title
-  except Exception as e:
-    print("❌ OpenAI Error:", e)
-    return title
-  
-def extract_json(text: str) -> dict:
-  """
-  Extract pure JSON from OpenAI response
-  """
-  try:
-    cleaned = re.sub(r"```json|```", "", text, flags=re.IGNORECASE).strip()
-    return json.loads(cleaned)
-  except Exception as e:
-    raise e
-
-def extract_variant_with_openai(product_name: str, variant_spec, category_attributes, product_description: str  ) -> dict:
-  try:
-    if isinstance(variant_spec, (dict, list)):
-      variant_spec_text = json.dumps(variant_spec, ensure_ascii=False)
-    else:
-      variant_spec_text = str(variant_spec)
-
-    product_description_text = product_description or ""
-
-    attr_lines = []
-    for attr_key, value_type, enum_values in category_attributes:
-      if value_type == "enum" and enum_values:
-        enums = ", ".join(enum_values)
-        attr_lines.append(f"{attr_key} (enum: {enums})")
-      else:
-        attr_lines.append(f"{attr_key} ({value_type})")
-
-    category_attr_text = "\n".join(attr_lines)
-
-    prompt = f"""
-You are a strict product attribute extractor.
-
-TASK:
-Extract product attributes strictly based on the provided category attributes.
-
-PRIORITY OF SOURCES (highest → lowest):
-1. VARIANT SPEC
-2. PRODUCT NAME
-3. PRODUCT DESCRIPTION
-
-RULES:
-1. Only extract attributes listed in CATEGORY ATTRIBUTES.
-2. Do NOT create or infer new attributes.
-3. If an attribute value is not clearly present in any source, return null.
-4. Normalize values only if rules are provided in CATEGORY ATTRIBUTES.
-5. Ignore promotions, shipping terms, guarantees, emojis, and marketing text.
-6. Do NOT guess or hallucinate.
-7. Do NOT override higher-priority sources with lower-priority ones.
-8. Output MUST be valid JSON only.
-
-CATEGORY ATTRIBUTES:
-{category_attr_text}
-
-PRODUCT NAME:
-{product_name}
-
-VARIANT SPEC (raw):
-{variant_spec_text}
-
-PRODUCT DESCRIPTION:
-{product_description_text}
-
-COLOR_NORMALIZATION = {{
-  "black": ["black", "jet", "midnight", "carbon", "obsidian", "onyx"],
-  "white": ["white", "pearl", "snow", "ivory", "ceramic", "milk"],
-  "gray": ["gray", "grey", "graphite", "gunmetal", "titanium", "charcoal", "ash"],
-  "silver": ["silver", "platinum", "chrome", "steel", "aluminum"],
-  "blue": ["blue", "navy", "sky", "baby", "ocean", "aqua", "cyan", "teal"],
-  "green": ["green", "forest", "olive", "mint", "emerald", "sage", "moss", "army", "lime"],
-  "red": ["red", "maroon", "burgundy", "wine", "crimson", "scarlet", "cherry"],
-  "brown": ["brown", "coffee", "chocolate", "mocha", "espresso", "walnut", "cocoa"],
-  "orange": ["orange", "peach", "coral", "copper", "tangerine"],
-  "yellow": ["yellow", "mustard", "honey", "amber", "lemon"],
-  "purple": ["purple", "violet", "lavender", "lilac", "plum", "amethyst", "grape"],
-  "pink": ["pink", "rose", "blush", "fuchsia", "magenta"],
-  "gold": ["gold", "champagne", "rose gold"],
-  "beige": ["beige", "sand", "nude", "khaki", "taupe"],
-  "cream": ["cream", "off-white", "eggshell", "vanilla"],
-}}
-
-OUTPUT FORMAT:
-JSON object with keys exactly matching attribute_key.
-""".strip()
-    
-    response = client.chat.completions.create(
-        model="gpt-4.1-mini",
-        temperature=0,
-        messages=[
-            {"role": "system", "content": "You are a deterministic extractor."},
-            {"role": "user", "content": prompt}
-        ]
-    )
-
-    content = response.choices[0].message.content.strip()
-
-    return extract_json(content)
-  
-  except json.JSONDecodeError as e:
-    print("JSON parse error:", e)
-    print("Raw output:", content)
-    return {}
-  except Exception as e:
-    print("OpenAI extract_variant error:", e)
-    return {}
   
 # ------------------------------------------------------------
 # SAVE PRODUCT AND CHUNKS
 # ------------------------------------------------------------
 def save_product_and_chunks(products_data, l1, l2, l3):
   print(f"Saving {len(products_data)} products to database...")
-  category_attributes = get_categories_attributes(l2[0])
 
   conn = ensure_connection()
   with conn.cursor() as cur:
@@ -308,16 +137,6 @@ def save_product_and_chunks(products_data, l1, l2, l3):
         current_parent_id = product_id_first
 
       name = product_data.get('product_name', '')
-      chunk_text = clean_title_with_openai(name, l1, l2, l3)
-      variant_spec_raw = json.dumps(product_data.get('variant_spec', {}))
-      product_detail_raw = product_data.get('product_detail', {})
-      variant_spec = extract_variant_with_openai(name, variant_spec_raw, category_attributes, product_detail_raw.get("deskripsi", ""))
-
-      # print(f"product: {name}")
-      print(f"name: {chunk_text}")
-      # print(f"product_detail: {product_detail_raw}")
-      # print(f"variant_spec: {variant_spec_raw}")
-      # print(f"results: {variant_spec}")
 
       print("*"*50)
 
@@ -331,8 +150,7 @@ def save_product_and_chunks(products_data, l1, l2, l3):
         product_data.get('product_price'),
         product_data.get('product_stock'),
         product_data.get('product_sold'),
-        # json.dumps(product_data.get('variant_spec', {})),
-        json.dumps(variant_spec),
+        json.dumps(product_data.get('variant_spec', {})),
         json.dumps(product_data.get('product_detail', {})),
         json.dumps(product_data.get('product_media', {})),
         json.dumps(product_data.get('product_reviews', {})),
@@ -348,9 +166,15 @@ def save_product_and_chunks(products_data, l1, l2, l3):
       
       # if current_parent_id is None:
       cur.execute(delete_old_chunks_query, (product_id,))
+      if i == 0 :
+        if l3[1] == "Android OS" :
+          clean_name = classify_product(name, l3[1])
+          name = clean_name.get("normalized_name")
+        elif l3[1] == "iOS" :
+          clean_name = classify_product(name, l3[1])
+          name = clean_name.get("normalized_name")
 
-      if is_parent == False :
-        embedding = generate_embedding(chunk_text)
+        embedding = generate_embedding(name)
 
         if embedding:
           embedding_str = f"[{','.join(map(str, embedding))}]"
@@ -359,24 +183,10 @@ def save_product_and_chunks(products_data, l1, l2, l3):
             insert_chunk_query,
             (
               product_id,
-              chunk_text,
+              name,
               embedding_str
             )
           )
-
-# ------------------------------------------------------------
-# GET CATEGORY ATTRIBUTES
-# ------------------------------------------------------------
-def get_categories_attributes(category_id=None):
-  conn = ensure_connection()
-  with conn.cursor() as cur:
-    cur.execute("""
-      SELECT attribute_key, value_type, enum_values 
-      FROM category_attributes
-      WHERE category_id = %s;
-    """, (category_id,))
-    
-    return cur.fetchall()
 
 # ------------------------------------------------------------
 # GET CATEGORY BY LEVEL

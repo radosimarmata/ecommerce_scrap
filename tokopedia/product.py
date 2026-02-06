@@ -381,7 +381,7 @@ class TokopediaScraper:
 # --- Main Execution ---
 if __name__ == "__main__":
   # url = "https://www.tokopedia.com/huawei/huawei-matepad-se-11-tablet-4-128gb-fhd-eye-comfort-display-7700mah-metal-unibody-grey-78825?t_id=1770013758049&t_st=1&t_pp=homepage&t_efo=pure_goods_card&t_ef=homepage&t_sm=rec_homepage_outer_flow&t_spt=homepage"
-  url = "https://www.tokopedia.com/enterelectronic/samsung-qa55ls01b-qled-the-serif-smart-tv-4k-55-inch-qa-55ls01-55ls01b-1731325257318368529?extParam=ivf%3Dfalse%26search_id%3D20260203080959F9B902FC3289AF3A5HNE"
+  url = "https://www.tokopedia.com/enterelectronic/lg-oled55c4psa-oled-evo-4k-smart-tv-55-inch-dolby-vision-atmos-120hz-lg-55c4-55c4psa-oled55c4?extParam=ivf%3Dfalse%26search_id%3D2026020603502963923F49E524130CEJ4V"
   
   scraper = TokopediaScraper()
   results = scraper.scrape(url)

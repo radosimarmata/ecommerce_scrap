@@ -1,194 +1,242 @@
-2026-02-03 17:01:04,946 - INFO - Scraping untuk setiap kategori Handphone & Tablet setiap child kategori 1 halaman.
+2026-02-06 16:47:00,265 - INFO - Scraping untuk setiap kategori Handphone & Tablet setiap child kategori 2 halaman.
 
-2026-02-03 17:01:05,730 - INFO - URL: https://www.tokopedia.com/wesel/realme-c71-4-128gb-6-128gb-8-128gb-garansi-resmi-1731703521952237282?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:01:07,844 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:08,868 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:09,527 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:10,495 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:11,066 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:11,886 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:12,752 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:13,190 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:14,086 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:15,537 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:15,946 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:16,622 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:17,764 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:18,273 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:18,903 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:20,416 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:20,754 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:21,393 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:22,443 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:22,874 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:23,572 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:24,599 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:24,971 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:25,658 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:26,733 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:28,801 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:28,885 - INFO - URL: https://www.tokopedia.com/enterelectronic/sony-hts40r-soundbar-bluetooth-usb-5-1ch-600w-wireless-rear-speaker-surround-hts40-ht-s40r-ht-s40-instan-kurir-7f84d?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:01:30,425 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:31,488 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:32,483 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:33,362 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:33,780 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:34,448 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:35,778 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:36,327 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:36,407 - INFO - URL: https://www.tokopedia.com/enterelectronic/lg-oled-48c4psa-oled-evo-4k-smart-tv-48-inch-120hz-dolby-vision-atmos-lg-48c4-oled48c4-oled48c4psa?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:01:37,949 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:39,120 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:39,619 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:39,659 - INFO - URL: https://www.tokopedia.com/enterelectronic/sony-mhc-v43d-audio-party-speaker-portable-karaoke-bluetooth-mhc-v43-mhc-v43d-b663e?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:01:41,489 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:42,311 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:42,987 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:44,161 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:44,923 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:45,750 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:46,689 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:47,181 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:47,222 - INFO - URL: https://www.tokopedia.com/enterelectronic/samsung-qa55ls01b-qled-the-serif-smart-tv-4k-55-inch-qa-55ls01-55ls01b-1731325257318368529?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:01:48,800 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:49,642 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:50,353 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:51,449 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:51,830 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:51,862 - INFO - URL: https://www.tokopedia.com/enterelectronic/sony-soundbar-hts100f-speaker-wireless-soundbar-2-0ch-sony-ht-s100f?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:01:53,505 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:54,393 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:54,803 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:54,838 - INFO - URL: https://www.tokopedia.com/enterelectronic/lg-43ua7550psa-lg-uhd-ai-smart-tv-led-43-inch-4k-43ua75-43ua7550-magic-remote-1731328562155193617?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:01:56,445 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:57,295 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:01:57,788 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:01:57,832 - INFO - URL: https://www.tokopedia.com/legendeltro-id/motorola-moto-g06-lagos-4g-mediatek-helio-g81-ultra-12nm-4gb-128gb-50mp-kamera-5200mah-nfc-garansi-resmi-motorola-indonesia-1732765896707638321?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:01:59,353 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:00,299 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:00,900 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:02,044 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:02,412 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:03,173 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:04,139 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:04,564 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:04,692 - INFO - URL: https://www.tokopedia.com/legendeltro-id/tecno-pova-7-4g-5g-8-128-8-256-gb-garansi-resmi-1731882067282920497?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:02:06,544 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:07,756 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:08,452 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:09,657 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:10,124 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:11,018 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:12,334 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:12,782 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:13,518 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:14,705 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:15,709 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:16,541 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:17,585 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:17,964 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:18,683 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:19,610 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:20,989 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:21,714 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:22,748 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:23,118 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:23,920 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:24,948 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:26,136 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:26,866 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:27,795 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:28,386 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:29,155 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:30,166 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:30,573 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:31,272 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:32,351 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:32,757 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:33,452 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:34,574 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:34,972 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:35,067 - INFO - URL: https://www.tokopedia.com/wesel/oppo-reno-12f-5g-12-256gb-12-512gb-garansi-resmi-5g-amber-orange-512gb-7022b?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:02:36,802 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:37,889 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:38,614 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:39,596 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:40,048 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:40,787 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:41,746 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:42,162 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:42,824 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:43,820 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:44,207 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:44,246 - INFO - URL: https://www.tokopedia.com/enterelectronic/tcl-43v6b-50v6b-55v6b-65v6b-75v6b-led-4k-uhd-google-tv-43-50-55-65-75-inch-bezelless-hdr10-75-inch-75v6b-c0e3c?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:02:45,818 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:46,884 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:47,491 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:48,406 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:48,904 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:49,624 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:50,717 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:51,328 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:52,032 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:53,131 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:53,545 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:54,264 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:55,236 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:55,602 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:55,653 - INFO - URL: https://www.tokopedia.com/enterelectronic/samsung-soundbar-hwt420-speaker-wireless-soundbar-2-1ch-150w-hw-t420?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:02:57,370 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:58,381 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:02:58,787 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:02:58,851 - INFO - URL: https://www.tokopedia.com/enterelectronic/sony-kd55x85l-android-google-tv-55-inch-full-array-120-hz-kd-55x85l?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:03:00,513 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:01,622 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:01,983 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:02,035 - INFO - URL: https://www.tokopedia.com/enterelectronic/samsung-ua50du7000kxxd-led-smart-tv-50-inch-ua50du7000-crystal-uhd-4k-50du7000?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:03:03,741 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:04,687 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:05,051 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:05,090 - INFO - URL: https://www.tokopedia.com/legendeltro-id/realme-c71-8gb-128gb-garansi-resmi-indonesia-1732766205759685681?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:03:06,538 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:08,256 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:08,990 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:10,009 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:10,356 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:11,035 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:12,132 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:13,022 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:13,666 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:14,616 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:14,988 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:15,626 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:16,755 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:17,142 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:17,768 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:18,710 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:19,101 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:19,744 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:20,751 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:21,123 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:21,179 - INFO - URL: https://www.tokopedia.com/enterelectronic/sony-kd50x75k-smart-android-tv-50-inch-4k-google-tv-kd-50x75-50x75k?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:03:22,758 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:23,993 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:24,363 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:24,393 - INFO - URL: https://www.tokopedia.com/enterelectronic/lg-oled55c4psa-oled-evo-4k-smart-tv-55-inch-dolby-vision-atmos-120hz-lg-55c4-55c4psa-oled55c4?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:03:25,938 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:26,748 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:27,171 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:27,204 - INFO - URL: https://www.tokopedia.com/enterelectronic/sharp-aquos-sense-4-plus-android-smartphone-shs40p-ram-8gb-rom-128gb?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:03:29,571 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:30,520 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:31,332 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:31,379 - INFO - URL: https://www.tokopedia.com/legendeltro-id/infinix-smart-10-4gb-128gb-unisoc-t7250-ips-lcs-120hz-sensor-fingerprint-garansi-resmi-1732728561427907633?extParam=ivf%3Dfalse%26search_id%3D20260203100105CD00692C3BFE59193JMS
-2026-02-03 17:03:33,763 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:34,696 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:35,912 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:36,745 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:37,158 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:38,377 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:39,883 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:40,287 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-2026-02-03 17:03:41,547 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:42,529 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-03 17:03:42,964 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:08,840 - INFO - URL: https://www.tokopedia.com/mdpsuperstore/handphone-apple-iphone-15-128gb-1729998829721847399?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:13,640 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:13,955 - INFO - URL: https://www.tokopedia.com/mumfone/apple-iphone-13-128gb-256-gb-512gb-garansi-resmi-midnight-128-gb?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:15,840 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:16,082 - INFO - URL: https://www.tokopedia.com/wesel/iphone-13-128gb-256gb-garansi-resmi-pa-a-hitam-128gb-34779?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:17,664 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:17,895 - INFO - URL: https://www.tokopedia.com/mdpsuperstore/new-apple-iphone-16-handphone-iphone-16-garansi-resmi-1731142689586120295?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:19,067 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:19,267 - INFO - URL: https://www.tokopedia.com/royal-com/hp-iphone-15-256gb-grs-rsmi-indonesia-1731957147328873786?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:20,657 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:20,859 - INFO - URL: https://www.tokopedia.com/quattroid/apple-iphone-12-ram-internal-128gb-tam-78527?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:25,370 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:25,458 - INFO - URL: https://www.tokopedia.com/mdpsuperstore/new-apple-iphone-16-pro-128gb-256gb-512gb-garansi-resmi-1731142923455596135?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:26,717 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:27,252 - INFO - URL: https://www.tokopedia.com/mdpsuperstore/new-apple-iphone-16-plus-128gb-256gb-garansi-resmi-1731151346672371303?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:29,401 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:29,674 - INFO - URL: https://www.tokopedia.com/legendeltro-id/apple-iphone-16-128gb-garansi-resmi-indonesia-ibox-100-original-1733569748013450289?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:30,893 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:31,870 - INFO - URL: https://www.tokopedia.com/mdpsuperstore/smartphone-apple-iphone-14-128gb-starlight-blue-blue?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:32,982 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:33,107 - INFO - URL: https://www.tokopedia.com/royal-com/apple-iphone-13-128gb-midnight-black-garansi-resmi-1-tahun-layar-super-retina-xdr-6-1-inci-kamera-ganda-12mp-chip-a15-bionic-ios-15-upgradable-1733647146112681274?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:34,275 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:34,344 - INFO - URL: https://www.tokopedia.com/mdpsuperstore/handphone-iphone-air-256gb-512gb-garansi-resmi-hp-iphone-air-1733631999799821755?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:35,476 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:35,787 - INFO - URL: https://www.tokopedia.com/mdpsuperstore/new-apple-iphone-16-pro-max-256gb-512gb-1tb-garansi-resmi-1731142981512234599?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:37,058 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:37,404 - INFO - URL: https://www.tokopedia.com/tokolasvegas/apple-iphone-13-128gb-garansi-resmi-1729827770693026925?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:39,178 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:39,479 - INFO - URL: https://www.tokopedia.com/tokolasvegas/apple-iphone-16-128gb-garansi-resmi-1731114177487012973?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:40,825 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:40,945 - INFO - URL: https://www.tokopedia.com/tokolasvegas/apple-iphone-air-256gb-garansi-resmi-1732926053939184749?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:42,240 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:42,369 - INFO - URL: https://www.tokopedia.com/naruto-ambas/apple-iphone-13-128gb-garansi-resmi-gdn-1732265139658720315?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:48,495 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:48,560 - INFO - URL: https://www.tokopedia.com/indokom/apple-iphone-13-128gb-garansi-resmi-1733933030676727758?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:49,715 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:49,865 - INFO - URL: https://www.tokopedia.com/agres-id-bintaro/apple-iphone-13-128gb-a15-bionic-grs-rsmi-indonesia-ibox-gdn-digimap-1733629664798410599?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:51,143 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:51,205 - INFO - URL: https://www.tokopedia.com/indokom/apple-iphone-13-128gb-super-retina-xdr-6-1-inch-kamera-dual-12mp-chipset-a15-bionic-ram-4gb-memori-internal-128gb-1731514100998965198?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:52,677 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:52,841 - INFO - URL: https://www.tokopedia.com/indokom/apple-iphone-17-256gb-512gb-garansi-resmi-layar-6-3-inch-super-retina-xdr-prosesor-chip-a19-1732801907341363150?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:54,404 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:54,696 - INFO - URL: https://www.tokopedia.com/indokom/apple-iphone-14-128gb-256gb-512gb-garansi-resmi-128gb-starlight?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:56,172 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:56,965 - INFO - URL: https://www.tokopedia.com/kingcomp/apple-iphone-17-pro-256gb-512gb-garansi-resmi-1733082900525254654?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:58,273 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:47:58,424 - INFO - URL: https://www.tokopedia.com/indokom/apple-iphone-15-rom-128-256-512gb-garansi-resmi-black-128gb-b3194?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:47:59,834 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:00,210 - INFO - URL: https://www.tokopedia.com/laptop-project-id/apple-handphone-iphone-13-128gb-garansi-resmi-indonesia-1731585589334082885?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:01,610 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:01,737 - INFO - URL: https://www.tokopedia.com/kingcomp/apple-iphone-13-128gb-midnight-black-starlight-white-garansi-resmi-1732467321463736318?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:02,886 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:02,988 - INFO - URL: https://www.tokopedia.com/laptop-project-id/apple-iphone-16-128gb-apple-a18-3561-mah-brand-new-garansi-resmi-1733978379371906373?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:08,198 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:08,417 - INFO - URL: https://www.tokopedia.com/agresidsukabumi/apple-iphone-13-128gb-rsmi-starlight-white-black-1733388118443329328?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:09,678 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:09,709 - INFO - URL: https://www.tokopedia.com/mwgrup08/apple-iphone-xr-second-inter-64gb-128gb-64-gb-108ce?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:11,262 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:11,320 - INFO - URL: https://www.tokopedia.com/mqgcomp/iphone-13-new-128gb-garansi-resmi-1733670328577132092?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:12,485 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:12,512 - INFO - URL: https://www.tokopedia.com/meteorcell/iphone-15-128gb-garansi-resmi-bisa-instan-area-malang-1732691413957117511?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:14,460 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:15,032 - INFO - URL: https://www.tokopedia.com/meteorcell/iphone-16-pro-max-garansi-resmi-instan-area-malang-1731092124350842010?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:16,858 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:17,141 - INFO - URL: https://www.tokopedia.com/meteorcell/iphone-16-pro-garansi-resmi-instan-area-malang-1731092093649061018?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:18,182 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:18,401 - INFO - URL: https://www.tokopedia.com/starcomppurwokerto/iphone-15-128gb-256gb-512gb-garansi-resmi-ibox-gdn-digimap-1731566404886955177?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:20,780 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:21,021 - INFO - URL: https://www.tokopedia.com/meteorcell/iphone-13-128-gb-garansi-resmi-ibox-instan-area-malang-midnight-5e9ba?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:22,469 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:22,514 - INFO - URL: https://www.tokopedia.com/starcompsolo/apple-iphone-13-128gb-256gb-garansi-resmi-new-midnight-128gb-5ff5b?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ%26whid%3D19300518
+2026-02-06 16:48:23,949 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:24,166 - INFO - URL: https://www.tokopedia.com/starcomppurwokerto/apple-iphone-14-128gb-256gb-512gb-garansi-resmi-new-1731370580287063973?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:30,447 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:30,553 - INFO - URL: https://www.tokopedia.com/devstorebali/new-apple-iphone-15-128gb-256gb-garansi-resmi-ibox-tam-gdn-1731670313417869231?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:31,840 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:32,102 - INFO - URL: https://www.tokopedia.com/devstorebali/new-apple-iphone-13-128gb-garansi-resmi-ibox-tam-gdn-1731670330019579823?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:33,579 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:33,670 - INFO - URL: https://www.tokopedia.com/calosastore/iphone-15-128gb-256gb-garansi-resmi-tam-ibox-1-tahun-segel-greenpeel-128-gb-37aab?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ%26whid%3D8607532
+2026-02-06 16:48:35,017 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:35,084 - INFO - URL: https://www.tokopedia.com/calosastore/iphone-16-16-plus-16-pro-16-pro-max-1731088593946444994?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ%26whid%3D8607532
+2026-02-06 16:48:36,585 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:37,239 - INFO - URL: https://www.tokopedia.com/peacecellmarina/iphone-13-128-gb-garansi-resmi-apple-indonesia-1729867154085808109?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:37,924 - ERROR - Error scraping https://www.tokopedia.com/peacecellmarina/iphone-13-128-gb-garansi-resmi-apple-indonesia-1729867154085808109?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ: 410 Client Error: Gone for url: https://www.tokopedia.com/peacecellmarina/iphone-13-128-gb-garansi-resmi-apple-indonesia-1729867154085808109?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:37,959 - INFO - URL: https://www.tokopedia.com/nandacomps/apple-iphone-15-128gb-black-yellow-blue-pink-garansi-resmi-indonesia-1733195607764469240?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:39,631 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:39,878 - INFO - URL: https://www.tokopedia.com/calosastore/iphone-13-128gb-256gb-512gb-midnight-pink-blue-red-ibox-segel-norepack-1733462521922553476?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ%26whid%3D8607532
+2026-02-06 16:48:41,235 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:41,333 - INFO - URL: https://www.tokopedia.com/nandacomps/apple-iphone-16-128gb-256gb-garansi-resmi-indonesia-1732247865920751096?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:42,625 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:42,857 - INFO - URL: https://www.tokopedia.com/peacecellmarina/iphone-16-plus-garansi-resmi-indonesia-1731111583050598381?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:44,299 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:44,420 - INFO - URL: https://www.tokopedia.com/peacecellmarina/iphone-16-garansi-resmi-apple-indonesia-1733834936902911981?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:45,392 - ERROR - Error scraping https://www.tokopedia.com/peacecellmarina/iphone-16-garansi-resmi-apple-indonesia-1733834936902911981?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ: 410 Client Error: Gone for url: https://www.tokopedia.com/peacecellmarina/iphone-16-garansi-resmi-apple-indonesia-1733834936902911981?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:45,420 - INFO - URL: https://www.tokopedia.com/peacecellmarina/iphone-17-pro-garansi-resmi-apple-indonesia-1732832573023160301?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:50,282 - ERROR - Error scraping https://www.tokopedia.com/peacecellmarina/iphone-17-pro-garansi-resmi-apple-indonesia-1732832573023160301?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ: 410 Client Error: Gone for url: https://www.tokopedia.com/peacecellmarina/iphone-17-pro-garansi-resmi-apple-indonesia-1732832573023160301?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:50,295 - INFO - URL: https://www.tokopedia.com/peacecellmarina/iphone-17-garansi-resmi-apple-indonesia-1732826452833765357?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:50,985 - ERROR - Error scraping https://www.tokopedia.com/peacecellmarina/iphone-17-garansi-resmi-apple-indonesia-1732826452833765357?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ: 410 Client Error: Gone for url: https://www.tokopedia.com/peacecellmarina/iphone-17-garansi-resmi-apple-indonesia-1732826452833765357?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:51,011 - INFO - URL: https://www.tokopedia.com/multikom-id/apple-iphone-15-garansi-resmi-indonesia-gdn-tam-ibox-map-1730805403453589239?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:52,413 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:52,498 - INFO - URL: https://www.tokopedia.com/complete-selular/iphone-13-128gb-garansi-resmi-indonesia-1729579927207643930?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:53,624 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:53,666 - INFO - URL: https://www.tokopedia.com/nandacomps/apple-iphone-15-plus-128gb-256gb-garansi-resmi-indonesia-1733242439862486520?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:54,913 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:55,188 - INFO - URL: https://www.tokopedia.com/peacecellmarina/iphone-14-garansi-resmi-indonesia-1730024480952649709?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:56,219 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:56,299 - INFO - URL: https://www.tokopedia.com/agres-id-purwakarta/apple-iphone-13-128gb-garansi-resmi-indonesia-1731702689230587636?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:57,992 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:58,114 - INFO - URL: https://www.tokopedia.com/agres-id-purwakarta/apple-iphone-17-pro-256gb-512ggb-garansi-resmi-indonesia-1733279698676844276?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:48:59,613 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:48:59,653 - INFO - URL: https://www.tokopedia.com/agres-id-purwakarta/apple-iphone-14-128gb-garansi-resmi-indonesia-1734136370656282356?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:49:01,137 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:01,202 - INFO - URL: https://www.tokopedia.com/agres-id-purwakarta/apple-iphone-15-128gb-garansi-resmi-indonesia-1733255300039542516?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:49:02,519 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:02,594 - INFO - URL: https://www.tokopedia.com/agres-id-purwakarta/apple-iphone-16-pro-128gb-256gb-512gb-garansi-resmi-indonesia-1733768649230812916?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:49:04,028 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:04,141 - INFO - URL: https://www.tokopedia.com/agres-id-purwakarta/apple-iphone-16-128gb-garansi-resmi-indonesia-1733256280778114804?extParam=ivf%3Dtrue%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:49:05,475 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:05,608 - INFO - URL: https://www.tokopedia.com/collinsofficial/collins-x-robibois-apple-iphone-15-128gb-256gb-512gb-a16-bionic-cpu-6c-gpu-5c-resmi-ibox-gdn-digimap-1733455260392654023?extParam=ivf%3Dfalse%26search_id%3D202602060947083FE94A002317B518CRSJ
+2026-02-06 16:49:06,733 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:11,541 - INFO - URL: https://www.tokopedia.com/universestore/promo-apple-iphone-16-pro-max-garansi-resmi-apple-indonesia-1733122849641498065?extParam=ivf%3Dfalse
+2026-02-06 16:49:13,121 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:13,393 - INFO - URL: https://www.tokopedia.com/arenaitsolution/apple-iphone-13-128gb-midnight-black-starlight-garansi-resmi-indonesia-1733551128789681929?extParam=ivf%3Dfalse
+2026-02-06 16:49:14,852 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:14,976 - INFO - URL: https://www.tokopedia.com/digicell/iphone-13-pro-max-128-256-512-gb-1-tb-second-inter-ibox-1732172298252092918?extParam=ivf%3Dfalse
+2026-02-06 16:49:16,373 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:17,432 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-16-pro-garansi-resmi-apple-indonesia-1731088195315139999?extParam=ivf%3Dfalse
+2026-02-06 16:49:19,081 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:19,509 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-17-pro-garansi-resmi-apple-indonesia-1733338995770426833?extParam=ivf%3Dfalse
+2026-02-06 16:49:20,961 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:21,372 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-16-pro-max-garansi-resmi-apple-indonesia-1731088225894827423?extParam=ivf%3Dfalse
+2026-02-06 16:49:22,802 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:23,229 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-15-garansi-resmi-apple-indonesia-1731212305091954129?extParam=ivf%3Dfalse
+2026-02-06 16:49:24,712 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:25,122 - INFO - URL: https://www.tokopedia.com/digicell/iphone-xs-max-64-256-gb-second-mulus-inter-ibox-64-gb-inter-silver?extParam=ivf%3Dfalse
+2026-02-06 16:49:26,198 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:26,602 - INFO - URL: https://www.tokopedia.com/universestore/promo-apple-iphone-17-garansi-resmi-apple-indonesia-1733123730093409745?extParam=ivf%3Dfalse
+2026-02-06 16:49:27,955 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:28,282 - INFO - URL: https://www.tokopedia.com/digicell/iphone-8-plus-64-256-gb-second-mulus-inter-ibox-64-gb-inter-silver?extParam=ivf%3Dfalse
+2026-02-06 16:49:33,798 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:34,252 - INFO - URL: https://www.tokopedia.com/collinsofficial/apple-iphone-13-128gb-256gb-512gb-a15-bionic-cpu-6c-gpu-4c-resmi-ibox-gdn-digimap-1733521223973438663?extParam=ivf%3Dfalse
+2026-02-06 16:49:36,278 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:36,772 - INFO - URL: https://www.tokopedia.com/universestore/promo-apple-iphone-15-garansi-resmi-apple-indonesia-1733097622994126289?extParam=ivf%3Dfalse
+2026-02-06 16:49:38,300 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:38,632 - INFO - URL: https://www.tokopedia.com/universestore/promo-apple-iphone-16-plus-garansi-resmi-apple-indonesia-1733123136378013137?extParam=ivf%3Dfalse
+2026-02-06 16:49:40,192 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:40,533 - INFO - URL: https://www.tokopedia.com/digicell/iphone-16-pro-128gb-256gb-512gb-1tb-new-garansi-resmi-1732655997033219574?extParam=ivf%3Dfalse
+2026-02-06 16:49:41,909 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:42,547 - INFO - URL: https://www.tokopedia.com/digicell/iphone-8-64-256-gb-second-mulus-inter-ibox-64-gb-inter-gold?extParam=ivf%3Dfalse
+2026-02-06 16:49:43,711 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:44,299 - INFO - URL: https://www.tokopedia.com/digicell/iphone-12-mini-64-128-256-gb-second-mulus-inter-ibox-64-gb-inter-blue?extParam=ivf%3Dfalse
+2026-02-06 16:49:45,524 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:46,635 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-16-plus-garansi-resmi-apple-indonesia-1731087089500784031?extParam=ivf%3Dfalse
+2026-02-06 16:49:48,021 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:48,425 - INFO - URL: https://www.tokopedia.com/collinsofficial/collins-apple-iphone-14-128gb-256gb-512gb-a15-bionic-cpu-6c-gpu-5c-resmi-ibox-gdn-digimap-1734011642761282759?extParam=ivf%3Dfalse
+2026-02-06 16:49:49,582 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:49,687 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-17-garansi-resmi-apple-indonesia-1733338491722696145?extParam=ivf%3Dfalse
+2026-02-06 16:49:55,613 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:55,908 - INFO - URL: https://www.tokopedia.com/collinsofficial/apple-iphone-15-128gb-256gb-a16-bionic-cpu-6c-gpu-5c-resmi-gdn-digimap-ibox-1733522005322269895?extParam=ivf%3Dfalse
+2026-02-06 16:49:57,120 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:49:58,233 - INFO - URL: https://www.tokopedia.com/collinsofficial/collins-apple-iphone-13-128gb-a15-bionic-cpu-6c-gpu-4c-resmi-ibox-gdn-digimap-1732716216274093255?extParam=ivf%3Dfalse
+2026-02-06 16:49:59,884 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:00,222 - INFO - URL: https://www.tokopedia.com/universestore/promo-apple-iphone-16-pro-garansi-resmi-apple-indonesia-1733097823743280593?extParam=ivf%3Dfalse
+2026-02-06 16:50:01,798 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:02,538 - INFO - URL: https://www.tokopedia.com/collinsofficial/apple-iphone-16-128gb-256gb-512gb-a18-cpu-6c-gpu-5c-oled-resmi-ibox-gdn-digimap-1733098782703125703?extParam=ivf%3Dfalse
+2026-02-06 16:50:03,908 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:04,689 - INFO - URL: https://www.tokopedia.com/collinsofficial/apple-iphone-14-128gb-256gb-512gb-a15-bionic-cpu-6c-gpu-5c-resmi-ibox-gdn-digimap-1731203878980846791?extParam=ivf%3Dfalse
+2026-02-06 16:50:05,897 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:06,133 - INFO - URL: https://www.tokopedia.com/collinsofficial/apple-iphone-16-plus-128gb-256gb-512gb-a18-cpu-6c-gpu-5c-oled-resmi-ibox-gdn-digimap-1731203913530115271?extParam=ivf%3Dfalse
+2026-02-06 16:50:07,404 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:07,776 - INFO - URL: https://www.tokopedia.com/digicell/apple-iphone-16-128gb-256gb-512gb-garansi-resmi-digicell-1732655762097079798?extParam=ivf%3Dfalse
+2026-02-06 16:50:09,317 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:10,097 - INFO - URL: https://www.tokopedia.com/collinsofficial/apple-iphone-14-128gb-256gb-512gb-a15-bionic-cpu-6c-gpu-5c-resmi-ibox-gdn-digimap-1734011671161832647?extParam=ivf%3Dfalse
+2026-02-06 16:50:11,546 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:11,683 - INFO - URL: https://www.tokopedia.com/collinsofficial/apple-iphone-13-128gb-256gb-512gb-a15-bionic-cpu-6c-gpu-4c-resmi-ibox-digimap-gdn-1733521273050334407?extParam=ivf%3Dfalse
+2026-02-06 16:50:17,485 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:17,910 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-13-garansi-resmi-apple-indonesia-1731212318631560657?extParam=ivf%3Dfalse
+2026-02-06 16:50:19,283 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:19,350 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-17-pro-max-garansi-resmi-apple-indonesia-1733339097770919377?extParam=ivf%3Dfalse
+2026-02-06 16:50:21,091 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:22,040 - INFO - URL: https://www.tokopedia.com/universestore/promo-apple-iphone-17-pro-garansi-resmi-apple-indonesia-1733124036816766417?extParam=ivf%3Dfalse
+2026-02-06 16:50:23,404 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:23,830 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-17-pro-max-garansi-resmi-apple-indonesia-1733124110497711569?extParam=ivf%3Dfalse
+2026-02-06 16:50:25,213 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:25,648 - INFO - URL: https://www.tokopedia.com/digicell/iphone-14-pro-max-128gb-256gb-512gb-1tb-new-1732189366656206326?extParam=ivf%3Dfalse
+2026-02-06 16:50:26,907 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:27,290 - INFO - URL: https://www.tokopedia.com/digicell/iphone-14-pro-128gb-256gb-512gb-1tb-second-like-new-inter-ibox-space-black-128gb-inter-dd867?extParam=ivf%3Dfalse
+2026-02-06 16:50:28,870 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:29,587 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-16e-garansi-resmi-apple-indonesia-1731088267500881311?extParam=ivf%3Dfalse
+2026-02-06 16:50:31,327 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:31,451 - INFO - URL: https://www.tokopedia.com/digicell/iphone-13-pro-128-256-512-gb-1-tb-second-like-new-inter-ibox-1731680377561974262?extParam=ivf%3Dfalse
+2026-02-06 16:50:32,592 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:33,085 - INFO - URL: https://www.tokopedia.com/digicell/iphone-11-pro-max-64-128-256-gb-64-gb-inter-midnight-green?extParam=ivf%3Dfalse
+2026-02-06 16:50:42,523 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:43,547 - INFO - URL: https://www.tokopedia.com/universestore/promo-apple-iphone-13-garansi-resmi-apple-indonesia-1731300534192539089?extParam=ivf%3Dfalse
+2026-02-06 16:50:44,942 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:45,140 - INFO - URL: https://www.tokopedia.com/universestore/promo-apple-iphone-16-garansi-resmi-apple-indonesia-1733123223986800081?extParam=ivf%3Dfalse
+2026-02-06 16:50:46,514 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:46,851 - INFO - URL: https://www.tokopedia.com/digicell/iphone-7-plus-32-128-256-gb-second-mulus-inter-ibox-32-gb-inter-silver?extParam=ivf%3Dfalse
+2026-02-06 16:50:47,982 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:49,194 - INFO - URL: https://www.tokopedia.com/digicell/iphone-14-128gb-256gb-512gb-new-ibox-1732172357397349878?extParam=ivf%3Dfalse
+2026-02-06 16:50:50,701 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:51,295 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-16-garansi-resmi-apple-indonesia-1731086830601405855?extParam=ivf%3Dfalse
+2026-02-06 16:50:52,549 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:52,933 - INFO - URL: https://www.tokopedia.com/universestore/apple-iphone-14-garansi-resmi-apple-indonesia-1731212392349795793?extParam=ivf%3Dfalse
+2026-02-06 16:50:54,346 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:50:54,746 - INFO - URL: https://www.tokopedia.com/gawaishop/exclusive-805gadget-iphone-16-pro-max-256gb-512gb-1tb-garansi-resmi-1731151797426292428?extParam=ivf%3Dfalse
+2026-02-06 16:50:59,803 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:00,114 - INFO - URL: https://www.tokopedia.com/golaptopjakarta/apple-iphone-14-128gb-i-garansi-resmi-indonesia-1734137990873121818?extParam=ivf%3Dfalse
+2026-02-06 16:51:01,349 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:01,445 - INFO - URL: https://www.tokopedia.com/gawaishop/exclusive-affiliate-apple-iphone-14-128gb-garansi-resmi-1734223933720200908?extParam=ivf%3Dfalse
+2026-02-06 16:51:02,620 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:02,787 - INFO - URL: https://www.tokopedia.com/gawaishop/exclusive-805gadget-iphone-16-128gb-original-garansi-resmi-1732749654601336524?extParam=ivf%3Dfalse
+2026-02-06 16:51:04,178 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:04,337 - INFO - URL: https://www.tokopedia.com/gallerygadget/apple-iphone-16-iphone-16-plus-garansi-resmi-ibox-indonesia-1733739282028136433?extParam=ivf%3Dfalse%26whid%3D13860110
+2026-02-06 16:51:05,823 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:06,903 - INFO - URL: https://www.tokopedia.com/gawaishop/exclusive-irvan-galih-iphone-16-128gb-original-garansi-resmi-1732749699768354508?extParam=ivf%3Dfalse
+2026-02-06 16:51:08,133 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:08,384 - INFO - URL: https://www.tokopedia.com/gawaishop/exclusive-805gadget-iphone-15-128gb-garansi-resmi-ibox-tam-gdn-1732765857730102988?extParam=ivf%3Dfalse
+2026-02-06 16:51:09,599 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:09,777 - INFO - URL: https://www.tokopedia.com/golaptopjakarta/apple-iphone-13-128gb-256gb-512gb-a15-bionic-cpu-6c-gpu-4c-resmi-ibox-gdn-digimap-1731067676829123610?extParam=ivf%3Dfalse
+2026-02-06 16:51:11,072 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:11,142 - INFO - URL: https://www.tokopedia.com/gawaishop/exclusive-robibois-apple-iphone-17-original-garansi-resmi-tam-gdn-1733346185876702924?extParam=ivf%3Dfalse
+2026-02-06 16:51:12,599 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:13,152 - INFO - URL: https://www.tokopedia.com/softcom-official-store/iphone-16-chipset-a18-bionic-128gb-256gb-512gb-original-garansi-resmi-indonesia-1731088502392718856?extParam=ivf%3Dtrue
+2026-02-06 16:51:14,503 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:14,858 - INFO - URL: https://www.tokopedia.com/gallerygadget/apple-iphone-16-pro-iphone-16-pro-max-garansi-resmi-ibox-indonesia-1733738716766701553?extParam=ivf%3Dfalse
+2026-02-06 16:51:19,859 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:20,999 - INFO - URL: https://www.tokopedia.com/gawaishop/live-exclusive-apple-iphone-17-pro-original-garansi-resmi-tam-gdn-1733951020404606668?extParam=ivf%3Dfalse
+2026-02-06 16:51:22,423 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:22,592 - INFO - URL: https://www.tokopedia.com/agres-id-mobile/apple-iphone-14-128gb-garansi-resmi-indonesia-apple-a15-bionic-chip-6-1-inch-super-retina-oled-ios-16-1732512528567404311?extParam=ivf%3Dfalse
+2026-02-06 16:51:24,654 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:25,075 - INFO - URL: https://www.tokopedia.com/gawaishop/exclusive-affiliate-iphone-16-plus-128gb-256gb-garansi-resmi-1731704541783164620?extParam=ivf%3Dfalse
+2026-02-06 16:51:26,424 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:26,668 - INFO - URL: https://www.tokopedia.com/gameridsurabaya/apple-iphone-16-pro-max-256-gb-512-gb-1-tb-titanium-color-garansi-resmi-indonesia-1731107698523801555?extParam=ivf%3Dfalse
+2026-02-06 16:51:28,135 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:28,782 - INFO - URL: https://www.tokopedia.com/gawaishop/exclusive-kohcun-apple-iphone-17-original-garansi-resmi-tam-gdn-1733347381332379340?extParam=ivf%3Dfalse
+2026-02-06 16:51:30,012 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-02-06 16:51:30,292 - INFO - URL: https://www.tokopedia.com/gawaishop/exclusive-affiliate-iphone-16-pro-max-256gb-512gb-1tb-garansi-resmi-1731151862374368972?extParam=ivf%3Dfalse
+2026-02-06 16:51:31,422 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"

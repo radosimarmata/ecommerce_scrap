@@ -35,3 +35,4 @@ C:\Users\<YOUR USER>\.docker\daemon.json
 ```
 pip install -r requirements.txt
 ```
+3. python -m spacy download en_core_web_sm
